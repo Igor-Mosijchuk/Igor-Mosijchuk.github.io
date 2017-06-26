@@ -1,0 +1,36 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+#parkingLevel1 .st0 {
+	fill:#ECECEF;
+}
+#parkingLevel1 .st1 {
+	fill: none;
+	stroke: #2B2522;
+	stroke-width: 2.5;
+	stroke-miterlimit: 10;
+}
+#parkingLevel1 .st2 {
+	fill:#2B2522
+}
+#parkingLevel1 .st3 {
+	fill:#57B034
+}
+#parkingLevel1 .st3:hover {
+	cursor: pointer;
+	fill: #FF3942;
+	transition: fill .5s;
+}
+#parkingLevel1 .st4 {
+	fill:#2B2523
+}
+#parkingLevel1 .st5, .st6 {
+	font: 12px 'Roboto'
+}
+.wrapper {
+	margin: 0 auto;
+	width: 100%
+}
