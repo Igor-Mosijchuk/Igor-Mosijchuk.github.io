@@ -1,0 +1,45 @@
+.first-line
+	$line-height: 2.5rem
+	font-size: 1rem
+	//padding: 0 2.5%
+	+cont
+	+flex(row)
+	align-items: flex-end
+	color: $light
+	line-height: $line-height
+	height: $line-height
+	background: $blue
+	a
+		color: $light
+		transition: color .4s
+		&:hover
+			color: $white
+	.phones a
+
+	em
+		+fw(300)
+		margin-right: .5rem
+	em ~ em
+		margin-left: 1.5rem
+	.lang
+		cursor: pointer
+		//height: 100%
+		+br(1px, red)
+		display: table
+		height: 100%
+		position: relative
+		background: grey
+		select
+			height: 100%
+			cursor: pointer
+			border: none
+			// line-height: 100%
+			background: transparent
+			color: $light
+			padding-right: 1rem
+	i
+		line-height: $line-height
+		svg
+			+quat(1.2rem)
+			margin: 0 .3rem -.25rem 0
+			fill: $light
