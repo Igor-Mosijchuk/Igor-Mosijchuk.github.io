@@ -37,90 +37,13 @@ body
 		.div11
 			i
 		.div12
-			i
-	section.first-line
-		p
-			i
-				include ../img/svg/place.svg
-			a(href="#map") с. Гранітне, вул. Заводська, 15
-		p.phones
-			i
-				include ../img/svg/phone.svg
-			em Загальний
-			a(href="#phone1") +38 (0362) 67-04-00
 
-			em Відділ продажу
-			a(href="#phone2") +38 (0362) 67-04-09
-
-			em Відділ закупівель
-			a(href="#phone3") +38 (0362) 67-04-08
-		p.mail
-			i
-				include ../img/svg/letter.svg
-			a(href="#mail") office@basalt-ag.com.ua
-		p.lang
-			select
-				option DE
-				option EN
-				option RU
-				option(selected) UA
-	header
-		a.logotype(href="/")
-			img(src="img/png/bag-logo.png")
-		nav
-			a(href="/") Головна
-			a(href="/") Про компанію
-			a(href="/") Продукція
-			a(href="/") Технологія виробництва
-			a(href="/") Контакти
-	#slider
-		input(type="radio" name="slides" id="slide1" checked)
-		input(type="radio" name="slides" id="slide2")
-		input(type="radio" name="slides" id="slide3")
-		input(type="radio" name="slides" id="slide4")
-		input(type="radio" name="slides" id="slide5")
-		.bg-img
-			label(for="slide1")
-			label(for="slide2")
-			label(for="slide3")
-			label(for="slide4")
-			label(for="slide5")
-		.content
-			.desc
-				label(for="slide1")
-					h4 This is a first
-					p Vel autem voluptas ipsam quae minima provident, illum ipsum dolor sint, placeat optio itaque natus unde magnam harum quam saepe.Vel autem voluptas ipsam quae minima provident, illum ipsum dolor sint, placeat optio itaque natus unde magnam harum quam saepe.
-				label(for="slide2")
-					h4 This is a second
-					p Lorem ipsum dolor sit amet, consectetur adipisicing, sit amet, consectetur adipisicing elit. Fuga necessitatibus ab quaerat iure sint nostrum.
-				label(for="slide3")
-					h4 This is a third header
-					p Lorem ipsum dolor sit amet, consectetur adipisicing.
-				label(for="slide4")
-					h4 This is a fourth
-					p Lorem ipsum dolor sit amet, consectetur adipisicing.
-				label(for="slide5")
-					h4 This is a fivth
-					p Lorem ipsum dolor sit amet, consectetur adipisicing.
-				.side-controls
-					label(for="slide1")
-					label(for="slide2")
-					label(for="slide3")
-					label(for="slide4")
-					label(for="slide5")
-				.controls
-					label(for="slide1")
-					label(for="slide2")
-					label(for="slide3")
-					label(for="slide4")
-					label(for="slide5")
+	include _first-line
+	include _header
+	include _slider
 
 	section#about
 		h3 Вирівський кар'єр
-
-	section#about
-		h3 Вирівський кар'єр
-
 
 	footer
 		h6
