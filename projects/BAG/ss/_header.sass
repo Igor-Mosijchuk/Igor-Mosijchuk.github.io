@@ -17,11 +17,8 @@ header
 $slider-height: 300px
 #slider
 	input[name="slides"]
-		z-index: 100
-		padding: absolute
-		height: 0
-		+br
-		width: 0
+		position: absolute
+		opacity: 0
 	height: $slider-height
 	position: relative
 	overflow: hidden
@@ -33,11 +30,11 @@ $slider-height: 300px
 			width: 100%
 			background: no-repeat top center
 			background-size: cover
-			transition: opacity 3s
+			transition: opacity 1.2s
 			opacity: 0
 	.content
 		position: relative
-		//width: 100%
+		// width: 100%
 		height: 100%
 		+cont
 		.desc
@@ -52,27 +49,25 @@ $slider-height: 300px
 				margin: auto auto 2rem $atom*.5
 				padding: $gg
 				opacity: 0
-				// display: none
+				display: none
 				transition: opacity 2s
 	h4
 		margin-bottom: 1rem
 	.side-controls
 		+aa
-		+br
 		margin: auto auto 2rem 0
 		max-width: .5*$atom
 		display: table
+		height: 6rem
+		width: 3rem
 		label
-			// color: $white
-			// background: $blue
-			bottom: 0
-
-			border-top: 2.5rem solid transparent
-			border-bottom: 2.5rem solid transparent
-			width: 2.5rem
-			opacity: .1
-			position: absolute
-
+			cursor: pointer
+			opacity: .7
+			background: $blue
+			height: 50%
+			width: 100%
+			&:hover
+				opacity: 1
 	.controls
 		+aa
 		margin: auto auto 2rem
@@ -91,27 +86,32 @@ $slider-height: 300px
 			&:hover
 				background: $blue
 
+%opacity
+	opacity: 1
+%table
+	display: table
+%bg-blue
+	background: $blue
 @for $i from 1 through $slides
-	%opacity
-		opacity: 1
-	%table
-		display: table
 	#slide#{$i}:checked ~ .content .controls [for="slide#{$i}"]
-		background: $blue
-	#slide#{$i}:checked ~ .content .desc [for="slide#{$i}"]
+		@extend %bg-blue
+	#slide#{$i}:checked ~ .content .desc>[for="slide#{$i}"]
 		@extend %opacity
-		// height: inherit
+		@extend %table
 	#slide#{$i}:checked ~ .bg-img [for="slide#{$i}"]
 		@extend %opacity
 		background-image: url('../img/jpg/theme#{$i}.jpg')
 	$a: $i - 1
 	$b: $i + 1
-	@if $a < 1
+	@if $a == 0
 		$a: $slides
 	@if $b > $slides
 		$b: 1
-	#slide#{$i}:checked ~ .side-controls [for="slide#{$a}"]
-		border-top: 2.5rem solid transparent
-	#slide#{$i}:checked ~ .side-controls [for="slide#{$b}"]
-		border-bottom: 2.5rem solid transparent
-		// @extend %opacity
+	#slide#{$i}:checked ~ .content .side-controls :nth-child(#{$b})
+		position: absolute
+		bottom: 0
+		// border-color: green
+		@extend %table
+	#slide#{$i}:checked ~ .content .side-controls :nth-child(#{$a})
+		// border-color: red
+		@extend %table
