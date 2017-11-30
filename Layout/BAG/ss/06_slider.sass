@@ -1,0 +1,122 @@
+$slider-height: 300px
+#slider
+	input[name="slides"]
+		position: absolute
+		opacity: 0
+	height: $slider-height
+	position: relative
+	overflow: hidden
+	.bg-img
+		label
+			position: absolute
+			top: 0
+			height: 100%
+			width: 100%
+			background: no-repeat top center
+			background-size: cover
+			transition: opacity 1.2s
+			opacity: 0
+	.content
+		position: relative
+		// width: 100%
+		height: 100%
+		+cont
+		.desc
+			width: 100%
+			height: 100%
+			position: relative
+			> label
+				+aa
+				// height: 0
+				+w(4.5)
+				background: $white2
+				margin: auto auto 2rem $atom*.5
+				padding: $gg
+				transform: scale(1, 0)
+				transform-origin: center bottom
+				// opacity: 0
+				//display: none
+				// transition: opacity 2s
+				transition: transform .6s .3s
+	h4
+		margin-bottom: 1rem
+	.side-controls
+		svg
+			+quat(1rem)
+			position: absolute
+			z-index: 10
+		+aa
+		margin: auto auto 2rem 0
+		max-width: .5*$atom
+		display: table
+		height: 6rem
+		width: 3rem
+		label
+			cursor: pointer
+			opacity: .7
+			background: $blue
+			height: 50%
+			width: 100%
+			&:hover
+				opacity: 1
+	.controls
+		+aa
+		margin: auto auto 2rem
+		text-align: center
+		font-size: 0
+		+w(1.5)
+		label
+			cursor: pointer
+			box-shadow: 2px 2px .5rem $blue3
+			display: inline-block
+			background: $white
+			+quat(10px)
+			transition: background 1s
+			& ~ label
+				margin-left: 14px
+			&:hover
+				background: $blue
+
+%opacity
+	opacity: 1
+%table
+	display: table
+%bg-blue
+	background: $blue
+%scale
+	transform: scale(1)
+
+%arrows
+	&:before
+		display: table
+		position: absolute
+		width: 3rem
+		line-height: 3rem
+		height: 3rem
+		color: $white
+		left: center
+		text-align: center
+@for $i from 1 through $slides
+	#slide#{$i}:checked ~ .content .controls [for="slide#{$i}"]
+		@extend %bg-blue
+	#slide#{$i}:checked ~ .content .desc>[for="slide#{$i}"]
+		// @extend %opacity
+		@extend %table
+		@extend %scale
+	#slide#{$i}:checked ~ .bg-img [for="slide#{$i}"]
+		@extend %opacity
+		background-image: url('../img/jpg/theme#{$i}.jpg')
+	$a: $i - 1
+	$b: $i + 1
+	@if $a == 0
+		$a: $slides
+	@if $b > $slides
+		$b: 1
+	#slide#{$i}:checked ~ .content .side-controls label:nth-of-type(#{$a})
+		@extend %table
+		position: relative
+	#slide#{$i}:checked ~ .content .side-controls label:nth-of-type(#{$b})
+		position: absolute
+		bottom: 0
+		border-top: 1px solid white
+		@extend %table
