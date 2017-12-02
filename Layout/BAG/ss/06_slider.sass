@@ -1,4 +1,6 @@
 $slider-height: 300px
+$controlSize: 2.5rem
+
 #slider
 	input[name="slides"]
 		position: absolute
@@ -12,13 +14,15 @@ $slider-height: 300px
 			top: 0
 			height: 100%
 			width: 100%
-			background: no-repeat top center
-			background-size: cover
-			transition: opacity 1.2s
+			background: no-repeat top center /cover
+			transition: opacity .5s
 			opacity: 0
 	.content
+		span
+			font-weight: bold
 		position: relative
-		// width: 100%
+		font-size: 1.4rem
+		color: $blue
 		height: 100%
 		+cont
 		.desc
@@ -27,38 +31,41 @@ $slider-height: 300px
 			position: relative
 			> label
 				+aa
-				// height: 0
 				+w(4.5)
+				z-index: 2
 				background: $white2
 				margin: auto auto 2rem $atom*.5
 				padding: $gg
 				transform: scale(1, 0)
 				transform-origin: center bottom
-				// opacity: 0
-				//display: none
-				// transition: opacity 2s
-				transition: transform .6s .3s
-	h4
-		margin-bottom: 1rem
+				opacity: 0
+				transition: opacity .5s, transform .5s .5s
+				&:after
+					$br: 4px
+					content: ""
+					display: block
+					+quat(2rem)
+					border: 1px solid $blue
+					border-width: $br 0 0 $br
+					position: absolute
+					top: -$br
+					left: -$br
+					z-index: -1
 	.side-controls
-		svg
-			+quat(1rem)
-			position: absolute
-			z-index: 10
 		+aa
 		margin: auto auto 2rem 0
-		max-width: .5*$atom
 		display: table
-		height: 6rem
-		width: 3rem
+		height: 2*$controlSize
+		width: $controlSize
+		opacity: .7
+		transition: opacity .5s
+		&:hover
+			opacity: 1
 		label
 			cursor: pointer
-			opacity: .7
 			background: $blue
-			height: 50%
 			width: 100%
-			&:hover
-				opacity: 1
+			height: 50%
 	.controls
 		+aa
 		margin: auto auto 2rem
@@ -67,42 +74,31 @@ $slider-height: 300px
 		+w(1.5)
 		label
 			cursor: pointer
-			box-shadow: 2px 2px .5rem $blue3
 			display: inline-block
 			background: $white
 			+quat(10px)
-			transition: background 1s
+			transition: background .5s
 			& ~ label
 				margin-left: 14px
 			&:hover
-				background: $blue
-
+				background: $blue2
 %opacity
 	opacity: 1
 %table
 	display: table
 %bg-blue
 	background: $blue
-%scale
+%transform
 	transform: scale(1)
-
-%arrows
-	&:before
-		display: table
-		position: absolute
-		width: 3rem
-		line-height: 3rem
-		height: 3rem
-		color: $white
-		left: center
-		text-align: center
 @for $i from 1 through $slides
 	#slide#{$i}:checked ~ .content .controls [for="slide#{$i}"]
 		@extend %bg-blue
+		&:hover
+			background: $blue2
 	#slide#{$i}:checked ~ .content .desc>[for="slide#{$i}"]
-		// @extend %opacity
+		@extend %opacity
 		@extend %table
-		@extend %scale
+		@extend %transform
 	#slide#{$i}:checked ~ .bg-img [for="slide#{$i}"]
 		@extend %opacity
 		background-image: url('../img/jpg/theme#{$i}.jpg')
@@ -112,11 +108,14 @@ $slider-height: 300px
 		$a: $slides
 	@if $b > $slides
 		$b: 1
-	#slide#{$i}:checked ~ .content .side-controls label:nth-of-type(#{$a})
+	#slide#{$i}:checked ~ .content .side-controls > :nth-of-type(#{$a})
 		@extend %table
 		position: relative
+		+arrow(l, $controlSize)
+		box-shadow: inset 0 -1px 0 $white
 	#slide#{$i}:checked ~ .content .side-controls label:nth-of-type(#{$b})
 		position: absolute
 		bottom: 0
-		border-top: 1px solid white
+		background-color: $blue
 		@extend %table
+		+arrow(r, $controlSize)

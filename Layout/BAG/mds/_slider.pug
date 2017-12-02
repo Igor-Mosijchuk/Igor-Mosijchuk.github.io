@@ -1,5 +1,5 @@
 #slider
-	input(type="radio" name="slides" id="slide1" checked)
+	input(type="radio" name="slides" id="slide1" checked autofocus)
 	input(type="radio" name="slides" id="slide2")
 	input(type="radio" name="slides" id="slide3")
 	input(type="radio" name="slides" id="slide4")
@@ -14,9 +14,13 @@
 		.desc
 			label(for="slide1")
 				h4 This is a first header of theme
-				p Запаси Вирівського родовища складають більше 47 млн. м³
+				p
+				| Запаси Вирівського родовища складають 
+				span більше&nbsp47&nbspмлн.&nbspм³. 
+				| Lorem ipsum dolor sit amet, consectetur adipisicing, sit 
+
 			label(for="slide2")
-				h4 This is a second
+				h4 This is a second header of theme
 				p Lorem ipsum dolor sit amet, consectetur adipisicing, sit amet, consectetur adipisicing elit. Fuga necessitatibus ab quaerat iure sint nostrum.
 			label(for="slide3")
 				h4 This is a third header
@@ -28,8 +32,6 @@
 				h4 This is a fivth
 				p Lorem ipsum dolor sit amet, consectetur adipisicing.
 			.side-controls
-				include ../img/svg/arrowL.svg
-				include ../img/svg/arrowR.svg
 				label(for="slide1")
 				label(for="slide2")
 				label(for="slide3")

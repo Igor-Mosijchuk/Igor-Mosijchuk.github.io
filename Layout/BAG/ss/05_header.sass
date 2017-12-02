@@ -1,6 +1,6 @@
 .first-line
 	$line-height: 2.5rem
-	font-size: 1rem
+	font-size: .98rem
 	+cont
 	+flex(row)
 	align-items: flex-end
@@ -20,43 +20,62 @@
 		margin-left: 1.5rem
 	.lang
 		cursor: pointer
+		position: relative
 		//height: 100%
 		display: table
 		height: 100%
-		position: relative
 		select
-			padding: 0 1rem
+			background: $blue
+			color: $light
+			padding: 0 2rem 0 1.2rem
 			height: 100%
+			appearance: none
 			cursor: pointer
-			border: none
-			// line-height: 100%
-			background: $blue4
-			color: $white
-			padding-right: 1rem
-			&:focus
-				// border: none
-				outline: none
-			&::selection
-				background: red
+			outline: 0
+			border: 0
+		&:hover
+			background: $blue2
+		&:after
+			position: absolute
+			content: ""
+			top: 0
+			right: 0
+			pointer-events: none
+			+arrow(d, $line-height, transparent)
+			// +br
 	i
 		line-height: $line-height
-		svg
-			+quat(1.2rem)
-			margin: 0 .3rem -.25rem 0
-			fill: $light
+	svg
+		+quat(1.2rem)
+		margin: 0 .3rem -.25rem 0
+		fill: $light
 header
 	+cont
-	padding-bottom: .25rem
-	padding-top: .5rem
+	+padV(1.5rem)
 	+flex(row)
 	nav
-		font-size: 1.15rem
 		display: table
-		a
+		font-size: 0
+		& > :first-child
+			background: $blue3
+			border-bottom: 2px solid $blue
+			color: $white
+		> a
+			display: table-cell
+			font-size: $size2
 			color: $blue
 			padding: .5rem 1.5rem
-			transition: all .4s
-			&:first-of-type
-				border-bottom: 2px solid $blue
-			&:hover
-				background: $blue4
+//			float: left
+//		ul
+//			display: block
+//			li
+//				width: 200px
+//				height: 18px
+//				+br
+//				background: red
+//
+//		a:hover
+//			background: red
+//			ul
+//				opacity: 1
+//				+br//
