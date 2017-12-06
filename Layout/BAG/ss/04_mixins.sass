@@ -47,7 +47,7 @@
 	right: 0
 	top: 0
 
-=arrow($direction: r, $size: 3rem, $c: $blue, $c2: $blue2)
+=arrow($direction: "", $size: 3rem, $c: $blue, $c2: $blue2)
 	display: block
 	@if $direction =="l"
 		transform: scale(-1, 1)
@@ -55,10 +55,10 @@
 		transform: rotate(90deg)
 	@if $direction =="u"
 		transform: rotate(-90deg)
-
 	background: url('../img/svg/arrow.svg') no-repeat center
 	background-color: $c
 	transition: background-color .5s
+	cursor: pointer
 	+quat($size)
 	&:hover
 		background-color: $c2

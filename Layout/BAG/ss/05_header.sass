@@ -50,32 +50,52 @@
 		margin: 0 .3rem -.25rem 0
 		fill: $light
 header
+	position: relative
+	z-index: 2
 	+cont
 	+padV(1.5rem)
 	+flex(row)
 	nav
-		display: table
-		font-size: 0
-		& > :first-child
-			background: $blue3
-			border-bottom: 2px solid $blue
-			color: $white
-		> a
-			display: table-cell
-			font-size: $size2
+		input
+			// display: none
+			opacity: 0.5
+		input:checked ~ label ul
+			transform: translate(0)
+			transform: scale(1)
+			margin-top: 1px
+		ul
+			background: transparentize($white, .2)
+			transition: transform .7s
+			width: inherit
+			position: absolute
+			left: 0
+			top: 100%
+			// margin-top: .5px
+			// height: 100%
+			transform-origin: top left
+			transform: translate(-100%, 1)
+			transform: scale(1, 0)
+			border-bottom: 1px solid $blue
+			border-top: 1px solid $blue
+			display: table
+			a
+				display: block
+		a, label
 			color: $blue
+			transition: background .3s, box-shadow 1s
 			padding: .5rem 1.5rem
-//			float: left
-//		ul
-//			display: block
-//			li
-//				width: 200px
-//				height: 18px
-//				+br
-//				background: red
-//
-//		a:hover
-//			background: red
-//			ul
-//				opacity: 1
-//				+br//
+			box-shadow: 0 2px 0 transparent
+			&:hover
+				background: $blue3
+				// border-color: $blue
+		> a, > label
+			box-sizing: content-box
+			cursor: pointer
+			// vertical-align: middle
+			// display: table-cell
+			font-size: $size2
+			padding: .5rem 1.5rem
+			// border-bottom: 2px solid transparent
+			position: relative
+			&:hover
+				box-shadow: 0 2px 0 $blue
