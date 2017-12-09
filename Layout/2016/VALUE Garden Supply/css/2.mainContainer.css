@@ -1,0 +1,27 @@
+#mainContainer {
+	background: #f3efe4;
+	padding-top: 39px;
+	padding-bottom: 30px;
+}
+.wrapper {
+	background: white;
+	border: 1px solid #E5DFD2;
+	border-radius: 6px;
+	box-sizing: border-box;
+	padding: 36px 43px 43px;
+}
+.contentMainPage {
+	display: table;
+}
+.contentMainPage > :nth-child(n) {
+	display: table-cell;
+}
+/*--------------H3----------------*/
+h3 {
+	color: #A3A78B;
+	font-size: 14px;
+	font-weight: 700;
+	padding-bottom: 28px;
+	text-transform: uppercase;
+}
+/*--------------H3----------------*/

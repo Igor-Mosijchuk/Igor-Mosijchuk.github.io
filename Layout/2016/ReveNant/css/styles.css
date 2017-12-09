@@ -1,0 +1,61 @@
+@import url(reset.css);
+@import url(header&baner.css);
+@import url(news.css);
+@import url(recentPortfolio.css);
+@import url(forUsers.css);
+@import url(latestNews.css);
+@import url(sponsors.css);
+@import url(footer.css);
+
+body {
+  background: rgba(128,0,28,0.25);
+  display: table;
+  font: 13px trebuchet ms;
+  width: 100%;
+}
+#wrapper {
+  margin: 0 auto;
+  width: 100%;
+}
+.widthPage {
+  background: rgba(0,0,0,0.0025);
+  box-sizing: border-box;
+  display: table;
+  margin: 0 auto;
+  padding: 0 5%;
+  width: 100%;
+}
+.widthContent {
+  background: rgba(0,0,0,0);
+  display: table;
+  margin: 0 auto;
+  width: 92%;
+}
+.colorBlue {
+  background: rgb(223,248,246);
+  border-bottom: 1.75px solid white;
+  border-top: 1.75px solid #D9DCD9;
+}
+.colorGrey {
+  border-bottom: 1.75px solid white;
+  border-top: 1.75px solid #D9DCD9;
+  background: #F8F8F8;
+  box-sizing: border-box;
+}
+/*---------------BLUR---------------*/
+body > svg {display: none;}
+.blur {
+ filter:progid:DXImageTransform.Microsoft.Blur(PixelRadius='0');
+ -webkit-filter: blur(0px);
+ filter: blur(0px);
+}
+.blur:hover {
+  webkit-filter: url(../index.html#blur);
+  filter: url(../index.html#blur);
+  -webkit-filter: blur(2px);
+  filter: blur(2px);
+  filter: progid:DXImageTransform.Microsoft.Blur(PixelRadius='2');
+  -webkit-transition: 1s -webkit-filter linear;
+  transition: 1s filter linear;
+}
+/*--------------END-BLUR------------*/

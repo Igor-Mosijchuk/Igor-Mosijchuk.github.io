@@ -1,0 +1,33 @@
+.LGGreyWhite, .forLogin li {
+  background: -moz-linear-gradient(
+    white 0px,
+    rgba(215,215,215,1) 1px,
+    rgba(230,230,230,0) 25px,
+    transparent 100%
+  ), white;
+  background: -webkit-linear-gradient(
+    white 0px,
+    rgba(215,215,215,1) 1px,
+    rgba(230,230,230,0) 25px,
+    transparent 100%
+  ), white;
+  background: linear-gradient(
+    white 0px,
+    rgba(215,215,215,1) 1px,
+    rgba(230,230,230,0) 25px,
+    transparent 100%
+  ), white;
+}
+.LGGreyWhite:not(nav):hover {
+  border: 1px solid rgba(205,205,205,1);
+  box-shadow: 0 0 2px 3px rgba(18,95,141,0.15);
+}
+.bRL4px {
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
+.bRR4px {
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+.hide {visibility: hidden;}

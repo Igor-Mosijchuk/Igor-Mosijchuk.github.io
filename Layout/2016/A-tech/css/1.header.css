@@ -1,0 +1,95 @@
+#support-search {
+  background: #1E3B50;
+  font-size: 11px;
+}
+#support-search ul, #support-search form {
+  display: table-cell;
+  line-height: 18px;
+  margin: 15px 0;
+  vertical-align: middle;
+  width: 100%;
+}
+#support-search ul {
+  color: #7990A1;
+}
+#support-search ul li {
+  display: table-cell;
+  padding: 5px 8px 5px 3px;
+  vertical-align: middle;
+}
+#support-search ul li:hover {
+  background: #85DADF;
+  color: #1E3B50;
+  cursor: pointer;
+  text-decoration: underline;
+}
+#support-search ul img {
+  margin-right: 5px;
+  opacity: 0.75;
+  vertical-align: middle;
+  width: 16px;
+}
+#support-search form div {
+  position: relative;
+}
+#support-search [type="input"] {
+  background: #23475F;
+  border: 1px solid transparent;
+  border-radius: 10px;
+  color: #7990A1;
+  font-size: 11px;
+  font-style: italic;
+  padding: 2px 12px;
+  width: 200px;
+}
+#support-search [type="input"]:hover {
+  border: 1px solid #7990A1;
+}
+#support-search [type="input"] + img {
+  border-radius: 10px;
+  height: 18px;
+  padding: 0 10px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 12px;
+}
+#support-search [type="input"] + img:hover {
+  background: #85DADF;
+  cursor: pointer;
+}
+/*_________________________________________________________________*/
+#nav {
+  display: table;
+  padding: 16px;
+}
+#nav > :nth-child(n) {
+  display: table-cell;
+  width: 25%;
+}
+#nav > :last-child {
+  text-align: right;
+}
+#nav img {width: 42px;}
+#nav img + img {width: 110px;}
+
+nav {
+  vertical-align: middle;
+}
+nav ul {
+  text-align: right;
+  text-align: -webkit-right;
+}
+nav li {
+  display: table-cell;
+}
+nav a {
+  border-radius: 4px;
+  color: white;
+  display: block;
+  padding: 6px 14px;
+}
+nav a:hover {
+  background: rgba(0,0,0,0.25);
+  box-shadow: inset 0 0 10px rgba(0,0,0,0.4);
+}

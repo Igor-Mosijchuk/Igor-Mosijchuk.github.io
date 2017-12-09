@@ -1,0 +1,106 @@
+#recentPortfolio h1 {
+  font-size: 26px;
+  font-weight: 300;
+  margin: 0 auto;
+  padding-top: 44px;
+  text-align: center;
+  text-shadow: 0 0 3.5px rgba(0,0,0,0.4);
+  text-transform: uppercase;
+  transform: scale(1,1.035);
+}
+#recentPortfolio h1 + h2 {
+  background-image: radial-gradient(black 0, transparent 1px);
+  background-repeat: repeat-x;
+  background-size: 12px 10px, 0px 0px;
+  margin: 26px auto;
+  height: 12px;
+  width: 382px;
+}
+#recentPortfolio h2 + h2 {
+  color: #8D908D;
+  font-size: 14px;
+  font-weight: 300;
+  margin-bottom: 37px;
+}
+#recentPortfolio h2 span {
+  color: #00AFD8;
+  font-weight: 500;
+}
+#recentPortfolio ul {
+  border-spacing: 21px 0;
+  position: relative;
+  margin: 0 -21px 81px -21px;
+}
+#recentPortfolio ul li {
+  background: #F3FCF5;
+  border-radius: 5px;
+  border-bottom: 1.8px solid rgba(0,0,0,0.4);
+  box-shadow: 0 -4px 5px rgba(0,0,0,0.15);
+  display: table-cell;
+  transform: scale(0.99);
+  transform-origin: center center;
+  overflow: hidden;
+  width: 25%;
+}
+#recentPortfolio ul li:hover {
+  transform: scale(1);
+  transform-origin: center center;
+}
+#recentPortfolio li img {
+  border-top-left-radius: inherit;
+  border-top-right-radius: inherit;
+  margin-top: -4px;
+  width: 100%;
+}
+#recentPortfolio li h3 {
+  color: #000100;
+  font-size: 15px;
+  font-weight: bold;
+  margin: 10px 16px;
+  margin-bottom: 0;
+}
+#recentPortfolio h4 {
+  background-image: radial-gradient(black 0, transparent 1px);
+  background-repeat: repeat-x;
+  background-size: 6px 6px, 0 0;
+  height: 4px;
+  margin: 10px 16px;
+}
+#recentPortfolio h4+h4 {
+  background-image: radial-gradient(#00C4FA 3px, rgba(0,0,0,.45) 4px, transparent 5px);
+  background-repeat: no-repeat;
+  background-size: 20px 20px, 0 0;
+  height: 20px;
+  left: -9px;
+  margin-bottom: -20px;
+  position: relative;
+  top: -21px;
+}
+#recentPortfolio li p {
+  color: #141C15;
+  margin: 10px 16px;
+  margin-top: 0;
+  opacity: 0.85;
+}
+#recentPortfolio ul div {
+  position: absolute;
+  right: 21px;
+  top: -10px;
+  transform-origin: top right;
+  transform: scale(1,-1);
+}
+#recentPortfolio ul div em {
+  background: #C8CBC8;
+  border-radius: 3px;
+  color: white;
+  float: left;
+  line-height: 22px;
+  padding: 0 9px 2px 9px;
+  vertical-align: middle;
+}
+#recentPortfolio ul div em + em {
+  margin-left: 3px;
+}
+#recentPortfolio ul div em:hover {
+  cursor: pointer;
+}

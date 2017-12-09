@@ -1,0 +1,94 @@
+footer {
+  background: url(../img/backViolet.png);
+  text-align: center;
+}
+footer > div {
+  width: 100%;
+  border-bottom: 1px dashed #585C75;
+  box-sizing: border-box;
+  display: table;
+  text-align: center;
+  margin: 0 auto;
+}
+footer > div a {
+  margin: 40px 5px;
+  display: inline-table;
+  width: 14.6% !important;
+}
+/*______________________________________________*/
+footer nav {
+  display: table;
+  width: 100%;
+  margin: 35px 0;
+  margin-bottom: 0;
+  padding-bottom: 80px;
+}
+footer nav > * {
+  vertical-align: middle;
+}
+footer nav a {
+  box-sizing: border-box;
+  border: 1px solid transparent;
+  border-radius: 3px;
+  font-size: 14px;
+  padding: 5.5px 10px;
+}
+footer nav a:hover {
+  border: 1px solid rgba(154,236,244,0.1);
+  color: #9AECF4;
+  text-decoration: none;
+}
+footer nav > * {
+  // outline: 1px solid green;
+  display: table-cell;
+  width: 50%;
+  color: #81849D;
+}
+/*----------------------------------------*/
+footer nav ol > * {
+  display: table-cell;
+  border: 1px solid red;
+  float: right;
+  background: #3A5896;
+}
+footer nav img {
+  box-sizing: border-box;
+  height: 20px;
+  width: 20px;
+}
+
+
+/*----------------------------------------*/
+footer nav p {
+  color: #75788B;
+  font-size: 13px;
+  font-weight: bold;
+  padding-left: 10px;
+  padding-top: 20px;
+}
+footer nav ol a {
+  display: ;
+}
+/*================================================================
+.backWhite {
+  background:
+    linear-gradient(0deg, rgba(0,0,0,.56) 0px, transparent 8px),
+    white;
+  position: relative;
+  z-index: 10;
+}
+.arrowDown {
+  bottom: 0;
+  height: 20px;
+  left: 50%;
+  margin-left: -20px;
+  position: absolute;
+  transform: skew(0, 26deg);
+  transform-origin: left bottom;
+  width: 20px;
+}
+.arrowDown.mirror {
+  margin-left: 0;
+  transform: skew(0, -26deg);
+  transform-origin: right bottom;
+}

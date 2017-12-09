@@ -1,0 +1,140 @@
+footer {
+  font-family: verdana;
+  padding: 17px 0 0 0;
+}
+footer>div {
+  margin: 0 auto;
+  width: 900px;
+}
+.alliancePartners {
+}
+footer h1 {
+  color: rgba(47,47,47,1);
+  font-family: helvetica CE, helvetica;
+  font-weight: bold;
+  letter-spacing: 1px;
+  line-height:1.5;
+  text-align: center;
+  padding: 0 0 3px 0;
+  margin: -6px 0 0 0;
+}
+footer h1 span {
+  -moz-box-sizing: padding-box;
+  box-sizing: padding-box;
+  -moz-transform: scale(1.1,0.9);
+  transform: scale(1.1,0.9);
+}
+footer>div>div ul {
+  display: table;
+  margin: 12px 0 0 0;
+}
+footer>div>div li{
+  display: table-cell;
+  line-height: 0;
+  text-align: center;
+  vertical-align: middle;
+  width: 1000px
+}
+footer>div>div ul>:first-child {
+  text-align: left;
+  width: 0
+}
+footer>div>div ul>:last-child {
+  text-align: right;
+  width: 0
+}
+footer > div {
+  display: table;
+}
+footer > div > ul {
+  display: table-cell;
+  margin: 13px 0;
+}
+.forLogin {float: left;}
+.forPolicy {float: right;}
+
+.forLogin li:not(:last-child) {
+  margin-right: 13px;
+}
+.forLogin li {
+  border-radius: 5px;
+  float: left;
+  text-transform: uppercase;
+}
+.forPolicy li {
+  float: left;
+}
+.forPolicy li:not(:last-child){
+  border-right: 1px solid rgba(255,255,255,0.8);
+}
+.forLogin li a:hover, .forPolicy li a:hover {
+  text-decoration: underline;
+}
+.forLogin li a, .forPolicy li a{
+  color: rgba(45,45,45,1);
+  display: table-cell;
+  font-size: 8pt;
+  padding: 3px 8px;
+  text-decoration: none;
+  vertical-align: middle;
+}
+.forLogin li a img {
+  height: 20px;
+  margin-right: 5px;
+}
+.forLogin li a > :nth-child(n),
+.forPolicy li a > :nth-child(n){
+  line-height: 20px;
+  float: left;
+}
+.forPolicy li a{
+  color: rgba(255,255,255,0.8);
+}
+footer nav {
+  border-top: 1px solid #3978a2;
+  padding-top: 20px;
+}
+footer nav ul {
+  display: table;
+  font-size: 8.5pt;
+  font-weight: 900;
+  text-transform: uppercase;
+  width: 100%;
+  }
+footer nav li {
+  display: table-cell;
+  text-align: center;
+  border-spacing: 12px;
+}
+footer nav li:not(:first-child){
+  padding-left: 5px;
+}
+footer nav li:not(:last-child){
+  border-right: 1px solid rgba(255,255,255,0.8);
+  padding-right: 5px;
+}
+footer nav li a{
+  color: rgba(255,255,255,0.8);
+  border-radius: 3px;
+  display: block;
+  padding: 2px 0;
+  text-decoration: none;
+}
+footer nav li a:hover {
+  color: rgba(0,0,0,0.75);
+  background: rgb(222,222,222);
+}
+.forPolicy li a:hover {
+  color: rgba(0,0,0,01);
+  background: rgba(222,222,222,0.75);
+}
+.forPolicy li:hover {
+  border-color: transparent;
+}
+footer nav+h4 {
+  color: rgb(203,211,219);
+  display: block;
+  font-size: 10px;
+  margin: 15px auto 50px auto;
+  text-align: center;
+}

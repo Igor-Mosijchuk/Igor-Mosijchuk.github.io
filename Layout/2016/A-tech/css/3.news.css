@@ -1,0 +1,26 @@
+#news ul {
+  display: table;
+  padding: 85px 0;
+}
+#news ul li {
+  color: #686C72;
+  display: table-cell;
+  font-size: 12px;
+  line-height: 170%;
+  padding-right: 25px;
+  text-align: center;
+  width: 33.33%;
+}
+#news ul li :not(img) {
+  text-align: left;
+}
+#news ul li img {
+  margin-bottom: 48px;
+}
+#news ul li h3 {
+  color: #132E44;
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 14px;
+}
+

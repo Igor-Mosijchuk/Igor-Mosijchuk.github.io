@@ -1,0 +1,67 @@
+@import url(0.reset.css);
+@import url(1.header.css);
+@import url(2.baner.css);
+@import url(3.get.css);
+@import url(4.underGet.css);
+@import url(5.advantages.css);
+@import url(6.aboutWorks.css);
+@import url(7.aboutQuality.css);
+@import url(8.footer.css);
+
+body {
+  color: #81849D;
+  font: 12px calibri;
+  min-width: 752px;
+}
+body a {
+  color: #81849D;
+  font: 12px calibri;
+}
+#wrapper {
+  margin: 0 auto;
+  width: 100%;
+}
+#wrapper > :nth-child(n) {
+  display: block;
+  width: 80% !important;
+  padding-right: 10%;
+  padding-left: 10%;
+}
+#wrapper > :nth-child(n) > :nth-child(n):not(#wrapperGet>:nth-child(n)){
+  padding: 0 8px !important;
+}
+.dashedSeparator {
+  background:
+    repeating-linear-gradient(
+      90deg,
+      #323756 0,
+      #323756 1px,
+      #292E50 1px,
+      #292E50 2px,
+      transparent 2px,
+      transparent 6px
+    );
+  border-bottom: 1px solid white;
+  border-top: 1px solid white;
+  height: 1px;
+}
+.reflect {
+  transform: scale(-1);
+}
+/*---------------BLUR---------------*/
+body > svg {display: none;}
+.blur {
+ filter:progid:DXImageTransform.Microsoft.Blur(PixelRadius='0');
+ -webkit-filter: blur(0px);
+ filter: blur(0px);
+}
+.blur:hover {
+  webkit-filter: url(../index.html#blur);
+  filter: url(../index.html#blur);
+  -webkit-filter: blur(2px);
+  filter: blur(2px);
+  filter: progid:DXImageTransform.Microsoft.Blur(PixelRadius='2');
+  -webkit-transition: 1s -webkit-filter linear;
+  transition: 1s filter linear;
+}
+/*--------------END-BLUR------------*/

@@ -1,0 +1,99 @@
+#latestNews {
+  padding-bottom: 62px;
+}
+#latestNews h1 {
+  font-size: 26px;
+  font-weight: 300;
+  margin: 0 auto;
+  padding-top: 44px;
+  text-align: center;
+  text-shadow: 0 0 3.5px rgba(0,0,0,0.4);
+  text-transform: uppercase;
+  transform: scale(1,1.035);
+}
+#latestNews h1 + h2 {
+  background-image: radial-gradient(black 0, transparent 1px);
+  background-repeat: repeat-x;
+  background-size: 12px 10px, 0px 0px;
+  margin: 26px auto;
+  height: 12px;
+  width: 382px;
+}
+#latestNews h2 + h2 {
+  color: #8D908D;
+  font-size: 14px;
+  font-weight: 300;
+  margin-bottom: 37px;
+}
+#latestNews h2 span {
+  color: #00AFD8;
+  font-weight: 500;
+}
+/*+++++++++++++++++++++++++++++++++++++++++++++++*/
+.latestNews {
+  background: rgba(0,0,0,0);
+  border-spacing: 26px 0;
+  margin: 0 -26px;
+  display: block;
+}
+.latestNews li {
+  border-spacing: 0;
+  display: table-cell;
+  overflow: hidden;
+  padding: 0 14px;
+  vertical-align: top;
+  width: 33%;
+}
+.latestNews li p {
+  display: table-cell;
+  margin-bottom: -20px;
+  vertical-align: top;
+}
+.latestNews li > :first-child {
+  position: relative;
+}
+.latestNews li > :first-child span {
+  background: rgba(0,209,221,0.5);
+  box-sizing: border-box;
+  color: white;
+  margin: 10px;
+  padding: 5px;
+  position: absolute;
+  top: 0;
+  width: 151px;
+}
+.latestNews img {
+  height: 120px;
+  margin-right: 10px;
+  width: 171px;
+}
+.latestNews li p + p > :nth-child(n){
+  display: block;
+}
+.latestNews b {
+  color: #002044;
+  font-size: 14.5px;
+  margin-bottom: 6px;
+}
+.latestNews i {
+  background: url(../svg/miniLabel.svg) no-repeat left;
+  background-size: 12px 12px;
+  color: #00AFDB;
+  font-weight: 500;
+  margin-bottom: 6px;
+  padding-left: 17px;
+}
+.latestNews i:hover {
+  background: left center url(../svg/miniLabel.svg) no-repeat,
+              rgba(223,248,246,0.5);
+  background-size: 12px 12px;
+  cursor: pointer;
+  text-decoration: underline;
+}
+.latestNews em {
+  color: rgba(6,15,7,0.85);
+  font-family: trebuchet MS;
+  font-size: 13.7px;
+
+  line-height: 18px;
+}

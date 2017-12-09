@@ -1,0 +1,168 @@
+@import url(searchLine.css);
+/*---------------------------------------------------*/
+footer ul {
+  padding: 36px 0;
+}
+footer ul li {
+  display: table-cell;
+  line-height: 19px;
+  padding: 0 20px;
+  vertical-align: top;
+  width: 25%;
+}
+footer ul > :last-child {
+  padding-right: 0;
+}
+footer ul > :first-child {
+  padding-left: 0;
+}
+footer h2 {
+  font-size: 22px;
+  font-weight: 300;
+  padding-bottom: 15px;
+  text-align: left;
+  text-shadow: 0 0 3.5px rgba(0,0,0,0.25);
+  transform: scale(1,1.035);
+}
+/*---------------------------------------------------*/
+footer h1 {
+  background: url(../svg/REVENANT-mini.svg) top left no-repeat;
+  height: 32px;
+  margin-bottom: 30px;
+}
+footer h1 + p {
+  font-size: 14px;
+}
+footer p:not(:last-child) {
+  margin-bottom: 22px;
+}
+q {
+  background: #FAFAFA;
+  border-bottom: 2px solid rgba(0,0,0,0.07);
+  border-top: 1px solid rgba(0,0,0,0.2);
+  border-radius: 4.5px;
+  font: 14px trebuchet ms;
+  display: block;
+  margin-bottom: 14px;
+  max-height: 70px;
+  overflow: auto;
+}
+q:hover {
+  border-bottom: 2px solid rgba(0,0,0,0.25);
+  border-top: 1px solid rgba(0,0,0,0.2);
+  box-shadow: 0 -1.5px 1px 1px rgba(0,0,0,0.07);
+}
+q img {
+  border-radius: inherit;
+  height: 70px;
+  width: 90px;
+  float: left;
+  margin-right: 10px;
+}
+q h3, q h4 {
+  display: block;
+  margin: 8px 15px;
+}
+q h3 {
+  font-size: 18px;
+}
+q h4 {
+  font-size: 13px;
+}
+footer p span, q h4 span {
+  color: rgba(0,0,0,0.5);
+  font-weight: 900;
+}
+footer h4 span:hover {
+  color: #45B5F7;
+  cursor: pointer;
+  text-decoration: underline;
+}
+footer p span:hover {
+  background: #FAFAFA;
+  color: rgba(0,0,0,0.85);
+  cursor: pointer;
+  outline: 4px solid #FAFAFA;
+  text-decoration: underline;
+}
+/*---------------------------------------------------*/
+footer form input {
+  border: 0;
+  border-radius: 3px;
+  box-sizing: border-box;
+  font: 14px trebuchet ms;
+  margin: 0;
+  padding: 10px 17px;
+}
+footer form input[type="input"] {
+  background: #FAFAFA;
+  border-top: 1px solid rgba(0,0,0,0.07);
+  border-bottom: 2px solid rgba(0,0,0,0.09);
+  color: #8B928C;
+  display: table;
+  margin-bottom: 12px;
+  width: 100%;
+}
+footer form input[type="input"]:hover {
+  box-shadow: 0 -1.5px 1px 1px rgba(0,0,0,0.07);
+  border-top: 1px solid rgba(0,0,0,0.2);
+  border-bottom: 2px solid rgba(0,0,0,0.25);
+}
+footer form input[type="button"] {
+  background: #38413C;
+  color: white;
+  float: right;
+  padding: 7px 20px;
+  /*border-top: 1px solid transparent;
+  border-bottom: 2px solid transparent;*/
+}
+footer form input[type="button"]:hover {
+  background: #45B5F7;
+  /*border-top: 1px solid #38413C;
+  border-bottom: 2px solid #38413C;*/
+  box-shadow: 1px 2.5px 1px 1px #38413C;
+  cursor: pointer;
+}
+/*---------------------------------------------------*/
+#copyright {
+  background: #202720;
+  border-top: 3px solid #38413C;
+  color: white;
+  display: table;
+}
+#copyright > div {
+  padding-top: 9px;
+  padding-bottom: 18px;
+}
+#copyright ul, #copyright ul + div {
+}
+#copyright ul {
+  display: table;
+  text-transform: uppercase;
+  width: 30%;
+  float: left;
+}
+#copyright ul li {
+  display: table-cell;
+}
+#copyright ul li a {
+  border-radius: 3px;
+  display: block;
+  padding: 7px 0;
+  text-align: center;
+}
+#copyright ul li a:hover {
+  background: #9EA6A1;
+  color: #202720;
+  text-decoration: none;
+}
+#copyright ul + div {
+  color: #9EA6A1;
+  padding: 7px 0;
+  float: right;
+}
+#copyright ul + div:hover {
+  color: black;
+  cursor: pointer;
+  text-shadow: 0 0 17px white;
+}

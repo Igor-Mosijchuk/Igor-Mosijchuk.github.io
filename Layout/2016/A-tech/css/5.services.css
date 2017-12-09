@@ -1,0 +1,67 @@
+#services {
+  padding: 84px 0;
+  position: relative;
+  overflow: hidden;
+}
+#services .arrow {
+  background:
+    url(../svg/arrow9x13.svg) no-repeat center center,
+    #85DADF;
+  background-size: 9px 13px;
+  border-radius: 0 4px 4px 0;
+  box-sizing: border-box;
+  opacity: 0.5;
+  padding: 18px;
+  position: absolute;
+  top: 50%;
+  margin-top: -18px;
+  z-index: 1;
+}
+#services .arrow + .arrow {
+  transform: scale(-1,1);
+  right: 0;
+}
+#services .arrow:hover {
+  cursor: pointer;
+  opacity: 1;
+}
+#services ul {
+  padding: 28px 0;
+  margin: 0 -33.33%;
+}
+#services ul li {
+  color: #686C72;
+  display: table-cell;
+  font-size: 12px;
+  line-height: 170%;
+  padding-right: 25px;
+  width: 20%;
+}
+#services ul > :first-child,
+#services ul > :last-child {
+  opacity: 0.5;
+/*  transform: scale(0.3)*/
+}
+#services ul > :first-child {
+  left: -33%;
+  /*transform-origin: center right;*/
+}
+#services ul > :last-child {
+  right: -20%;
+  /*transform-origin: center left;*/
+}
+img[src*="svg/service"] {
+  background: url(../svg/service/service-0.svg) no-repeat center center;
+  box-sizing: border-box;
+  float: left;
+  height: 56px;
+  margin-right: 10px;
+  padding: 10px;
+}
+#services ul li h4 {
+  color: #132E44;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 56px;
+  height: 56px;
+}

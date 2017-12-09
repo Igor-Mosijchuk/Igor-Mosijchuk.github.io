@@ -1,0 +1,178 @@
+footer {
+  color: #6F8899;
+  font-size: 12px;
+}
+footer > div:not(.separatorWrap) > :nth-child(n) {
+  border-bottom: 1px solid #396482;
+  border-top: 1px solid #1B3649;
+  display: table;
+  width: 100%;
+}
+footer > div:not(.separatorWrap) > :first-child {
+  border-bottom: 1px solid #396482;
+  border-top: none;
+}
+footer > div:not(.separatorWrap) > :last-child {
+  border-bottom: none;
+  border-top: 1px solid #1B3649;
+}
+/*tweet q uL li*/
+.tweet {
+  display: table;
+  font-size: 12px;
+  font-weight: 200;
+  padding: 38px 0;
+  width: 100%;
+}
+.tweet > :nth-child(n) {
+  display: table-cell;
+  vertical-align: top;
+}
+.tweet img[src$=".png"] {
+  border-radius: 1000px;
+  margin-right: 15px;
+  width: 52px;
+}
+.tweet ul > :nth-child(n) {
+  display: table;
+  padding: 5px 0;
+  vertical-align: middle;
+  width: 100%;
+}
+.tweet ul > :first-child,
+.tweet ul > :last-child {
+  line-height: 200%;
+}
+.tweet ul li a,
+.tweet ul li span{
+  color: #44B9C2;
+}
+.tweet h1,.tweet h1+a,.tweet p {
+  color: white !important;
+}
+/*tweet h1 span p a*/
+.tweet ul li > h1,
+.tweet ul li > span {
+  font-weight: bold;
+  float: left;
+}
+.tweet ul li h1 {
+  font-size: 13px;
+}
+.tweet h1 + a {
+  background: #00ADEF;
+  padding: 0 14px ;
+}
+.tweet ul li > span {
+  font-size: 11px;
+}
+.tweet h1 span {
+  margin-left: 5px;
+}
+.tweet p {
+  font: 100 12px segoe ui;
+  text-align: justify;
+}
+.tweet ul > :first-child a:hover {
+  box-shadow: 1px 1px 0.5px 1px rgba(255,255,255,0.5);
+}
+.tweet ul li > a {
+  border-radius: 3px;
+  display: flex;
+  float: right;
+  line-height: 20px;
+  margin-left: 10px;
+  padding: 2px 4px;
+  padding: 2px 6px;
+}
+.tweet ul > :nth-child(n) > a:hover {
+  background: rgba(0,0,0,0.25);
+}
+.tweet img[src$=".svg"] {
+  box-sizing: border-box;
+  height: 20px;
+  margin-right: 5px;
+  padding: 2px;
+  padding: 0;
+}
+/*social*/
+.social {
+  padding: 43px 0;
+}
+.social ul {
+  display: table-cell;
+  padding-right: 30px;
+  width: 33.33%;
+}
+.social ul h3 {
+  font-size: 14.5px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.social > :first-child q > :nth-child(n) {
+  display: table-cell;
+}
+.social > :first-child q {
+  display: table;
+  font-size: 12.5px;
+  font-style: italic;
+  height: 62px;
+  margin-bottom: 6px;
+  overflow: auto;
+  padding: 2px 25px 2px 0;
+}
+.social > :first-child q:hover {
+  background: #FF8D8B;
+  border-radius: 2.5px;
+}
+.social > :first-child q > :nth-child(n) {
+  vertical-align: middle;
+}
+.social > :first-child q img {
+  border-radius: 1000px;
+  float: left;
+  height: 62px;
+  margin-right: 6px;
+  width: 62px;
+}
+.social > :first-child q span {
+  color: white;
+  display: block;
+  font-weight: bold;
+  margin-top: 5px;
+}
+/*_____________________________________________________*/
+.social li {
+  line-height: 16px;
+  margin-bottom: 6px;
+  padding: 2px;
+}
+.social li:hover {
+  background: #FDCC77;
+  border-radius: 2.5px;
+  color: #1E3B50;
+  cursor: pointer;
+  text-decoration: underline;
+}
+.social ul li img[src*="svg/"] {
+  float: left;
+  height: 16px;
+  margin: 0 12px 0 6px;
+  width: 16px;
+}
+/*socialIcons*/
+.socialIcons {}
+.socialIcons img {
+  background: url(../svg/5px.svg) no-repeat center center;
+  background-size: 32px;
+  float: left;
+  margin: 0px 4.5px 4px -2px;
+  height: 15px;
+  padding: 10px;
+  width: 15px;
+}
+footer .copyright {
+  font-size: 10.5px;
+  text-align: center;
+  padding: 21px 0;
+}

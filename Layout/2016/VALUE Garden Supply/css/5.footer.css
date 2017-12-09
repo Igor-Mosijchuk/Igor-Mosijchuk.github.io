@@ -1,0 +1,92 @@
+footer {
+	background: #757f3c;
+}
+footer .row {
+	display: table;
+	padding: 30px 0 60px;
+}
+footer .row ol {
+	display: table-cell;
+	padding-right: 51px;
+}
+footer .row ol:not(:nth-child(2)) {
+	width: 243px;
+}
+
+footer .row ol:nth-child(2) ul {
+	column-count: 2;
+	column-gap: 17px;
+	margin: 0px 0px;
+}
+footer h3 {
+	display: block;
+	color: #3B401E;
+	font-size: 14px;
+	font-weight: 700;
+	padding: 0 0 20px 5px; 
+	text-transform: uppercase;
+	width: 100%;
+}
+footer h3:after {
+	content: "";
+	display: block;
+	margin: 8px 5px 0 -5px;
+	border-top: 1px solid #51582A; 
+	border-bottom: 1px solid #889446; 
+}
+footer li {
+	padding: 0 0 4px 6px;
+	margin-bottom: px;
+}
+footer li:hover {
+	position: relative;
+	top: 2px;
+}
+footer a {
+	color: white;
+	font-size: 13px;
+	font-weight: 100;
+	letter-spacing: 0.5px;
+}
+footer a:hover {
+	color: #E2D9BF;
+}
+/*-----------3-------------*/
+footer ol:last-child ul {
+	margin: -6px 0 0 6px;
+}
+footer ol:last-child ul li {
+	line-height: 12px;
+	padding: 0 18px 0 0; 
+	display: table;
+	margin: 5px 0 11px 0;
+}
+footer ol:last-child ul li em {
+	float: left;
+	height: 13px;
+	width: 13px;
+	margin: 0 12px 0 0;
+}
+footer ol:last-child ul li a {
+	text-transform: capitalize;
+}
+/*-----------------------------------------*/
+footer ol:last-child ul {
+	margin-bottom: 31px;
+}
+footer ol:last-child ul+h3{
+	margin-bottom: -3px;
+}
+/*-------search----START---*/
+footer form {
+	width: 237px;
+	left: 6px;
+	position: absolute;
+	top: 0;
+}
+footer input+em {
+	background: url(../svg/header/search.svg) no-repeat center;
+	margin-right: 14px; 
+	width: 17px;
+}
+/*-------search----END---*/

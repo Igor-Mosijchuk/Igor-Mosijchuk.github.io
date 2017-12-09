@@ -1,0 +1,130 @@
+#aboutWorks p {
+
+  color: white;
+  display: table;
+  font: 14px segoe ui;
+  height: 1px;
+  margin: 18px auto 60px auto;
+  position: relative;
+  width: 86.5%;
+}
+#aboutWorks p em {
+  border-radius: 11px;
+  height: 22px;
+  margin-top: -11px;
+  position: absolute;
+  text-align: center;
+  width: 22px;
+}
+#aboutWorks p i {
+  background-repeat: no-repeat;
+  height: 5px;
+  width: 8px;
+  position: absolute;
+  right: 0;
+  top: -2.5px;
+}
+#aboutWorks .blue {background: linear-gradient(90deg,#54CCDA, #86D071);}
+#aboutWorks .green {background: linear-gradient(90deg,#86D071, #FB9E36);}
+#aboutWorks .orange {background: #FB9E36;}
+
+#aboutWorks .blue em {background: #54CCDA;}
+#aboutWorks .green em {background: #86D071;}
+#aboutWorks .orange em {background: #FB9E36;}
+
+#aboutWorks .blue i {background: url(../svg/for-blue.svg);}
+#aboutWorks .green i {background: url(../svg/for-green.svg);}
+#aboutWorks .orange i {background: url(../svg/for-orange.svg);
+height: 6px;
+  top: -3px;
+
+width: 6px;}
+
+/*#aboutWorks ul {
+  padding-bottom: 20px;
+  border-bottom: 10px solid;
+
+}
+/*#aboutWorks ul li::after {
+  content: "";
+  position: absolute;
+  border: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-left-color: red;
+  border-right: none;
+  border-top: 10px solid transparent;
+  transform-origin: left center;
+  transform: scale(2,.35);
+}
+
+#aboutWorks ol {
+  position: relative;
+  background: rgba(0,0,0,0.1);
+  box-sizing: border-box;
+  z-index: 6;
+  margin: 30px 0;
+}
+#aboutWorks ol li {
+  padding-left: 32px;
+  width: 33.33%;
+  padding-right: 22px;
+  display: table-cell;
+  outline: 1px solid;
+  background:
+    -webkit-radial-gradient(
+      10px 50%, circle,
+      red 10px,
+      transparent 10px,
+      transparent
+    ),
+    linear-gradient(
+      90deg,
+      transparent 0,
+      transparent 20px,
+      rgba(0,0,0,.5) 20px,
+      rgba(0,0,0,.5) 98%
+    )
+  ;
+  background-position: 26px 0px;
+}
+
+#aboutWorks ol li:after {
+
+
+}
+/*
+#aboutWorks ol li::after {
+  border: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-left-color: red;
+  border-right: none;
+  border-top: 10px solid transparent;
+  position: absolute;
+  right: -50px;
+  transform-origin: left center;
+  transform: scale(2,.35);
+}
+
+/*ol {
+  background: rgba(0,0,0,0.1);
+  margin: 25px 0;
+  list-style: decimal-leading-zero;
+}
+ol li {
+  background: rgba(0,0,0,.1);
+  display: table-cell;
+  width: 33.33%;
+  padding:5px 22px;
+}
+ol li::before {
+  border: 10px solid;
+  border-radius: 10px;
+  margin-left: -6px;
+  position: absolute;
+}
+ol li::after {
+
+}
+/*
+ol - blockquote
+li - q

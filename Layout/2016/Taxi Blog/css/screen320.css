@@ -1,0 +1,70 @@
+@media (max-width: 270px) {
+	body>*{padding: 0}
+}
+@media (max-width: 320px) {
+	body {
+		font-size: .65rem;
+	}
+	header, #mainContainer, footer>* {
+		/*padding: 0 1.5%;*/
+		padding: 0 2.5%;
+	}
+	nav {/*header nav {*/
+		padding-bottom: 10px;
+	}
+	nav ul li {
+		line-height: 1.4rem;
+	}
+	nav ul li a {
+		font-size: .7rem !important;
+	}
+#wrapper {
+	min-width: 250px;
+	top: -25px;
+}
+.posts > * {
+	padding-left: 3.5%;
+	padding-right: 3.5%;
+}
+.posts > ul {
+	margin: -20px 0 5px;
+}
+
+.pagination {
+	display: table;
+	/*min-width: 228px;*/
+	/*display: */
+}
+.pagination a {
+	/*padding: 0 .5rem;*/
+}
+.pagination > * {
+	border-radius: 2px !important;
+	font-size: .625rem;
+	padding: 2px 3px;
+	/*font-size: .7rem;*/
+	/*height: 1rem;*/
+	/*line-height: 1rem;*/
+}
+.pagination button {
+	margin: 0 1px;
+}
+
+
+
+
+
+	aside {
+		padding: 22px 0 0 0;
+	}
+.social label {
+	display: table;
+	margin: 7px 0;
+}
+[src*='videoPlayer.png'] {
+	/*outline: 3px solid red;*/
+	/*width: 50% !important;*/
+}
+				/*<img src="img/videoPlayer.png">*/
+
+}

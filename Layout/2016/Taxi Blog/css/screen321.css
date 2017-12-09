@@ -1,0 +1,34 @@
+@media (min-width: 321px) {
+	body {
+		font-size: .7rem;
+	}
+	header, #mainContainer, footer>* {
+		padding: 0 2.25%;
+	}
+	header nav {
+		/*padding-bottom: 20px;*/
+	}
+	nav > div em {
+		margin-left: 2.5rem;
+	}
+	.posts > * {
+		padding-left: 4%;
+		padding-right: 4%;
+	}
+	.posts > ul {
+		margin: -13px 0 8px;
+	}
+	.posts ul li {
+		display: table-cell;
+	}
+	.pagination > * {
+		display: table-cell;
+		font-size: .625rem;
+		height: 1.2rem;
+		line-height: 1.1rem;
+		padding: 0 5px;
+	}
+	.social label {
+		display: table-cell;
+	}
+}

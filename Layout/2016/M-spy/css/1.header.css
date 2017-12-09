@@ -1,0 +1,90 @@
+#firstLine {
+  background: #2F3250;
+  color: #81849D;
+  position: relative;
+  z-index: 3;
+}
+#firstLine > * {
+  list-style: none;
+}
+#firstLine li {
+  float: left;
+  padding: 8px 0;
+}
+#firstLine > ol > :not(:first-child){
+  margin-left: 8px;
+  list-style: disc;
+  list-style-position: inside !important;
+}
+#firstLine ul {
+  float: right;
+  font-weight: bold;
+}
+#firstLine ul li{
+  background: #1B1E38;
+  float: left;
+  padding: 8px 12px;
+}
+#firstLine li:hover {
+  color: #9AECF4;
+  cursor: pointer;
+}
+#firstLine ul li+li:not(:first-child){
+  margin-left: 4px;
+}
+header {
+  background: url(../img/backViolet.png);
+  border-bottom: 1px solid #1B1E38;
+/*  'box-shadow'    */
+    box-shadow: 0 2px 7px 0px rgba(0,0,0,0.9);
+    position: relative;
+    z-index: 2;
+}
+header > :nth-child(n) {
+  height: 56px;
+  line-height: 56px;
+  margin: 14px 0;
+}
+header > img {
+  box-sizing: border-box;
+  padding: 10px;
+}
+header nav {
+  float: right;
+  display: inline-table;
+}
+header nav a {
+  border: 1px solid transparent;
+  border-radius: 3px;
+  font-size: 14px;
+  padding: 5.5px 10px;
+}
+header nav a:hover {
+  border: 1px solid rgba(154,236,244,0.1);
+  color: #9AECF4;
+  text-decoration: none;
+}
+header nav > :last-child {
+  background: #2F3250;
+  border: 1px solid;
+  font-weight: bold;
+  margin-left: 15px;
+  position: relative;
+  z-index: 2;
+}
+header nav > :last-child:hover {
+  border: 1px solid white;
+  color: white;
+}
+header nav > :last-child span {
+  left: 55%;
+  border-top: 8px solid;
+  border-left: 14px solid transparent;
+  border-right: 4px solid transparent;
+  bottom: -8px;
+  position: absolute;
+}
+header nav > :last-child span+span {
+  border-top: 8px solid #2F3250;
+  bottom: -7px;
+}

@@ -1,0 +1,74 @@
+.sidebar {
+	min-width: 220px !important;
+	position: relative;
+}
+.sidebar li {
+	padding-bottom: 4px;
+}
+.sidebar li:hover {
+	position: relative;
+	top: 2px;
+}
+.sidebar li a {
+	color: #4A4F2A;
+	font-size: 14px;
+	font-weight: 700;
+	text-transform: capitalize;
+}
+.sidebar li a:hover {
+	border-bottom: 1px solid;
+	color: #94A14C;
+	text-decoration: none;
+}
+/*---block#1---*/
+.sidebar ul {
+	margin-bottom: 26px;
+}
+/*---block#2---*/
+.sidebar ul+ul {
+	margin-bottom: 22px;
+}
+.sidebar ul+ul h3 {
+	margin-bottom: 1px;
+}
+.sidebar ul+ul li {
+	margin-bottom: 2px;
+}
+
+/*---block#3---*/
+.sidebar ul+ul+ul {
+	margin-bottom: 33px;
+}
+.sidebar ul+ul+ul li {
+	line-height: 13px;
+	padding: 0 18px 0 0; 
+	display: table;
+	margin: 5px 0 11px 0;
+}
+.sidebar ul+ul+ul li em {
+	float: left;
+	height: 13px;
+	width: 13px;
+	margin: 0 14px 0 0;
+}
+/*---block#4---*/
+.sidebar form {
+	box-sizing: border-box;
+	position: relative;
+	left: -8px;
+	width: 74.5%;
+}
+.sidebar ul+ul+ul+h3 {
+	margin-bottom: 11px;
+}
+.sidebar form input {
+	left: 0;
+	padding-left: 10px !important;
+	position: absolute;
+	top:0;
+}
+.sidebar form input+em {
+	background: url(../svg/sidebar/letterMail.svg) no-repeat center;
+	margin: -1px 9px 0 0;
+	width: 23.5px;
+}

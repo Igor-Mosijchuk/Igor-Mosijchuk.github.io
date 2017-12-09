@@ -1,0 +1,65 @@
+@media (min-width: 768px) {
+	body {
+		font-size: .9rem;
+	}
+	header, #mainContainer, footer>* {
+		padding: 0 3.5%;
+	}
+	header nav {
+		padding-bottom: 100px;
+	}
+	nav ul li a {
+		padding: 0 1rem;
+	}
+	nav > div em {
+		margin-left: 4rem;
+	}
+	#wrapper {
+		border-radius: .3rem;
+		top: -65px;
+	}
+	#wrapper > * {
+		display: table-cell;
+	}
+	.posts {
+		border-bottom-left-radius: inherit;
+		border-top-left-radius: inherit;	
+		width: 63%;
+	}
+	.posts > ul {
+		margin: -7px 0 18px;
+	}
+	.pagination > * {
+		font-size: .6875rem;
+		line-height: 1.75rem;
+		height: 1.75rem;
+	}
+	.pagination a {
+		padding: 0 .7rem;
+	}
+	.pagination button {
+		padding: 0 .5rem;
+		margin: 0 .5%;
+	}
+	aside {
+		border-bottom-right-radius: inherit;
+		border-top-right-radius: inherit;		
+		border-left: 1px solid #ECECEC;
+		padding: 0 1.5%;
+	}
+	.social {
+		display: table;
+	}
+	footer div > * {
+		display: table-cell;
+	}
+	footer article {
+		padding-right: 2rem;
+		width: 63%;
+	}
+	footer form {
+		padding-left: 2rem;
+		width: 37%;
+	}
+
+}

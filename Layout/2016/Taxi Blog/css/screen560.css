@@ -1,0 +1,58 @@
+@media (max-width: 400px) {
+
+	
+}
+@media (min-width: 401px) {
+	.pagination > *  {
+		line-height: 1.5rem;
+		height: 1.5rem;
+		padding: 0 2%;
+	}
+	.pagination button {
+		margin-right: .15rem; 
+	}
+}
+@media (max-width: 560px) {
+	body {
+		font-size: .75rem;
+	}
+	h2 {
+		font-size: .96rem;
+		padding-bottom: .5rem;
+		padding-top: .5rem;
+	}
+	header nav {
+		padding-bottom: 50px;
+	}
+	header nav ul {
+		display: none;
+	}
+	nav button {
+		background: url(../svg/menu.svg) center center no-repeat;
+		background-size: 32px;
+		border: none;
+		height: 32px;
+		width: 32px;
+		opacity: .8;
+	}
+	nav button:focus,
+	nav button:hover {
+		opacity: 1;
+	}
+/*.posts ul > :nth-child(even) {float: right;}*/
+/*.posts ul > :nth-child(odd) {float: left;}*/
+	.posts ul > :nth-child(n) {float: left;padding-right: 1rem}
+	.posts ul li {
+		font-size:.685rem;
+		margin: 0 8px 3px 0;
+	}
+	.posts ul li img {width: 12px !important;}
+	.posts p {
+		font-size: .73rem;
+	}
+	.posts p+a {
+		font-size: .65rem;
+		min-width: 104px;
+		padding: 8px 0;
+	}
+}

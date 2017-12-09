@@ -1,0 +1,126 @@
+.advantages {
+  color: #2F3250;
+  display: table;
+  font-size: 18px;
+  width: 100%;
+}
+.advantages > :nth-child(n) {
+  display: table-cell;
+  vertical-align: middle;
+  width: 50%;
+}
+.advantages article img[src$=".png"] {
+  float: right;
+  margin: 60px 145px 74px auto;
+}
+.advantages article q {
+  display: flex;
+  float: left;
+  font-weight: 100;
+  line-height: 42px;
+  margin: 20px 0;
+  width: 100%;
+}
+.advantages article q:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+.advantages article q::before {
+  background: url(../svg/tick.svg) no-repeat center center;
+  background-size: 35px;
+  border: 3px solid #B5ECF3;
+  border-radius: 40px;
+  box-sizing: border-box;
+  margin: 0 40px 0 20px;
+  box-shadow: none;
+  width: 42px;
+}
+.advantages article q:hover::before  {
+  box-shadow:
+    inset
+    0 0 5px 0 rgba(18,20,31,0.8),
+    0 0 5px 0 rgba(18,20,31,0.5);
+}
+.advantages article q :first-child:not(span) {
+  margin-left: 20px;
+}
+.advantages article q img {
+  box-sizing: border-box;
+  height: 42px;
+  padding: 0 3px;
+  border-bottom: 3px solid transparent;
+  border-top: 3px solid transparent;
+}
+.advantages article q img:hover {
+  border-bottom-color: rgba(18,20,31,.4);
+  border-top-color: rgba(18,20,31,.2);
+}
+.advantages article span {
+  font-weight: bold;
+}
+.advantages article span:after,
+.advantages article span:before {
+  content: "\00A0"
+}
+/*_______________________________________________*/
+#aboutWorks {
+  background: #EFF5F5;
+  color: #2F3250;
+  padding-bottom: 8px;
+  padding-top: 8px;
+}
+#aboutWorks div {
+  background: url(../img/backGrey.png);
+  border-radius: 5px;
+  box-sizing: content-box;
+  border: 3px solid white;
+  box-shadow: 0 0 8px 0 rgba(0,0,0,.3),inset 0 0 0px 1px #CFD5D5;
+  padding: 10px;
+  padding-bottom: 0;
+}
+#aboutWorks div > * {
+  display: table;
+  font-size: 16px;
+  width: 100%;
+}
+#aboutWorks div > ul > li {
+  display: table-cell;
+  width: 33.33%;
+  width: calc(100%/3);
+}
+#aboutWorks h1 {
+  display: block;
+  margin: 25px 0 30px 0;
+  font-size: 42px;
+  width: 100%;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+}
+#aboutWorks li > *:not(:last-child) {
+  vertical-align: middle;
+}
+#aboutWorks li span {
+  font-weight: bold;
+}
+#aboutWorks li span::after {
+  outline: 3px solid red;
+}
+
+#aboutWorks li img {
+  background: #292E50;
+  border: 3px solid white;
+  border-radius: 100px;
+  box-shadow: 0 0 10px 0 rgba(0,0,0,.4);
+  width: 64px;
+}
+/*
+#aboutWorks ul+ul span {
+  clip: rect(auto, 334px, auto, 31px)
+}
+#aboutWorks ul+ul span+span {
+  clip: rect(auto, 689px, auto, 389px);
+}
+#aboutWorks ul+ul span+span+span {
+  clip: rect(auto, 1037px, auto , 747px);
+}

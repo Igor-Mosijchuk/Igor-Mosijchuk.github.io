@@ -1,0 +1,75 @@
+#search {
+  background: #45B5F7;
+  color: white;
+}
+#search > div {
+  vertical-align: middle;
+}
+#search > div > :nth-child(n) {
+  display: table-cell;
+  padding: 9px 30px;
+  vertical-align: middle;
+}
+#search > div > :first-child {
+  padding-left: 0;
+}
+#search > div > :last-child {
+  padding-right: 0;
+}
+#search > div > :nth-child(n):not(:last-child) {
+  border-right: 1px solid white;
+}
+#search div span {
+  display: inline-block;
+}
+#search h1 :first-child,
+#search h3 :first-child {
+  font-size: 19px;
+}
+#search h2 li,
+#search h4 li {
+  display: table-cell;
+  /*vertical-align: middle;*/
+}
+#search h2 img {
+  padding: 4px 8px 0 8px;
+  width: 25px;
+}
+#search h4 ul {
+  display: flex;
+  /*line-height: 36px;*/
+}
+#search h4 input {
+  box-sizing: border-box;
+  background: transparent;
+  border: 1px solid rgba(182,255,254,1);
+  height: 36px;
+  padding: 0;
+}
+#search ::-webkit-input-placeholder {
+  color: white;
+  
+}
+#search h4 ul :first-child input {
+  width: 210px;
+  color: white;
+  border-radius: 5px 0 0 5px;
+  border-right: none;
+  font: 16px calibri;
+  padding: 0 10px;
+}
+#search h4 ul :first-child input:hover {
+  background: rgba(255,255,255,0.25);
+}
+#search h4 ul :last-child input {
+  background: url(../svg/search.svg) center center no-repeat, white;
+  background-size: 28px;
+  border-left: none;
+  border-radius: 0 5px 5px 0;
+  opacity: 0.8;
+  width: 38px;
+}
+#search h4 ul :last-child input:hover {
+  cursor: pointer;
+  opacity: 1;
+}

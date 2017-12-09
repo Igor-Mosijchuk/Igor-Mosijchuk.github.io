@@ -1,0 +1,45 @@
+@media (max-width: 767px) {
+	body {
+		font-size: .85rem;
+	}
+	nav ul li {
+		font-size: .5rem;
+	}
+	nav > div em {
+		margin-left: 1rem;
+	}
+	#wrapper {
+		border-radius: .2rem;
+		top: -25px;
+	}
+	.posts {
+		border-top-left-radius: inherit;
+		border-top-right-radius: inherit;
+	}
+	aside {
+		border-bottom-left-radius: inherit;
+		border-bottom-right-radius: inherit;
+		padding: 22px 6.5% 0;
+	}
+	aside>*:not(em):not(h3) {
+		max-width: 78%;
+		margin: 0 auto;
+	}
+	.social label:not(:last-child) {
+		padding-right: 14px;
+	}
+	footer {
+		padding-bottom: 50px !important;
+	}
+	footer nav {
+		display: none;
+	}
+	footer [placeholder], footer textarea {
+		margin-right: 10% !important;
+		margin-left: 10% !important;
+		max-width: 80%;
+	}
+	footer form {
+		margin-top: 2rem;
+	}
+}

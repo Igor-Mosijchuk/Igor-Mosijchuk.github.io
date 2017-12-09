@@ -1,0 +1,69 @@
+#inAction {
+  padding-bottom: 90px;
+}
+#inAction > div {
+/*
+  height: 370px;
+  overflow: auto;
+*/
+  display: block;
+}
+#inAction > div h3 + div {
+  border-spacing: 20px 0;
+  margin: 0 -20px 42px -20px;
+}
+#inAction div div > ul {
+  border: 2px solid #D8DCDD;
+  box-sizing: border-box;
+  display: table-cell;
+  font-size: 12px;
+  padding: 13px;
+  vertical-align: top;
+  width: 33.33%;
+}
+#inAction div div > :nth-child(2) {
+}
+.sidebar {
+  display: block;
+  overflow: hidden;
+  height: 250px;
+}
+#inAction .sidebar li {
+  color: #38464E;
+  font-style: italic;
+  list-style-position: inside;
+  list-style-image: url(../svg/list-style-image-circle.svg);
+  margin: 8px 0 16px 0;
+}
+/*__________________________________________________________*/
+#inAction .article {
+  color: #5B6164;
+  line-height: 185%;
+  padding-top: 40px;
+  text-align: center;
+}
+#inAction .article h5 {
+  color: #143148;
+  font-weight: bold;
+  padding-bottom: 22px;
+}
+#inAction .article > :last-child {
+  display: table;
+  margin: 50px auto 0 auto;
+}
+#inAction .article a {
+  border-bottom: 3px solid;
+  color: #26D2D9;
+  font-weight: bold;
+  padding: 7px 0px 4px 0px;
+}
+#inAction .article a:hover {
+  background: #45B5F7;
+  border-bottom: 3px solid transparent;
+  border-radius: 3px;
+  box-shadow: 1px 2.5px 1px 1px #38413C;
+  color: white;
+  cursor: pointer;
+  padding: 7px 14px 4px 14px;
+  text-shadow: 1px 1.5px 1px #38413C;
+}

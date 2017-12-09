@@ -1,0 +1,110 @@
+@import url(0.reset.css);
+@import url(1.header.css);
+@import url(2.underHeaderSlider.css);
+@import url(3.news.css);
+@import url(4.inNumbers.css);
+@import url(5.services.css);
+@import url(6.inAction.css);
+@import url(7.footer.css);
+.clear {
+  clear: both;
+}
+body {
+/*  background: url(../img/backBody.png);*/
+  font: 12px trebuchet ms;
+}
+body a {
+  font-family: trebuchet ms;
+}
+#wrapper {
+  background: #23475F;
+  margin: 0 auto;
+  outline: 2px solid red;
+  width: 100%;
+}
+.widthPage {
+  margin: 0 auto;
+  outline: 0px solid;
+}
+.widthPage > :nth-child(n):not(.arrow) {
+  padding-left: 14% !important;
+  padding-right: 14% !important;
+  width: 72%;
+}
+.white {
+  background: white;
+}
+.color85DADF {
+  background: #85DADF;
+}
+/*_____________________________________________________________*/
+
+.separatorWrap {
+  overflow: hidden;
+  margin-bottom: -4px;
+}
+.separator {
+  transform: translate(-49.9%,0);
+  background:
+    -webkit-repeating-linear-gradient(
+      left,
+      #FDCC77 0,
+      #FDCC77 75px,
+      #EFF4F7 75px,
+      #EFF4F7 79px,
+      #4DCFD5 79px,
+      #4DCFD5 154px,
+      #EFF4F7 154px,
+      #EFF4F7 158px,
+      #FF8D8B 158px,
+      #FF8D8B 233px,
+      #EFF4F7 233px,
+      #EFF4F7 237px,
+      #FDCC77 237px,
+      #FDCC77 312px
+    );
+  height: 4px;
+}
+.transform180 {
+  transform: translate(50%,-4px);
+}
+.atech-h3 {
+  color: #132E44;
+  font-size: 22px;
+  text-align: center;
+  margin-bottom: 20px;
+  transform: scale(1.2,1)
+}
+.indicatorSlider {
+  height: 3px;
+  width: 100%;
+  background: #E7ECEB;
+}
+.indicator {
+  background:
+    -webkit-linear-gradient(
+      #63DCE2 0px,
+      #63DCE2 1px,
+      #00CEDA 1px,
+      #00CEDA 2px,
+      #CAF1F4 2px,
+      #CAF1F4 3px
+    );
+  height: 3px;
+  margin: 0 auto;
+  width: 60px;
+}
+/*
+  box-sizing: border-box;
+  outline: 1px solid red;
+  border: 1px solid red;
+
+blue dark dark  #1E3B50
+blue dark       #23475F
+blue            #85DADF
+blue grey       #7990A1
+
+
+20-22px
+2.34%
+104.68%

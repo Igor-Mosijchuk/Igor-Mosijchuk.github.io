@@ -1,0 +1,239 @@
+#main {
+  color: #9A9A9A;
+  font: 12px arial;
+  margin: 10px auto;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 900px;
+}
+#main > div {
+  margin: 7px 0;
+}
+#main > div+div {
+  display: table;
+  width: 100%;
+}
+#main > :first-child {
+  margin-bottom: 10px;
+}
+#main > div+div ul {
+  display: table-cell;
+}
+
+.b5 {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  border: 1px solid #CDCDCD;
+  border-radius: 5px;
+  padding: 16px 14px;
+}
+.w60 {
+  width: 60%;
+  padding-right:15px;
+}
+.w40 {
+  width: 40%;
+}
+.w38 {
+  width: 38%;
+}
+.about {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  display: table;
+}
+.about > ul {
+  outline: 0px dotted black;
+  display: table-cell;
+  letter-spacing: 0.1px;
+}
+.about ul ul+ul {
+  display: table;
+  margin-top: 8px;
+}
+.about ul ul+ul > :nth-child(n){
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 50%;
+  padding: 5px 7px 5px 0;
+  float: left;
+}
+.about ul ul+ul > :nth-child(2n+1){
+  /*outline: 1px solid green;*/
+  clear: both;
+}
+.about ul ul+ul > :nth-child(2n+2){
+  /*outline: 1px solid red;*/
+  padding-left: 5px;
+}
+h1, h3 {
+  line-height: 2;
+  text-transform: uppercase;
+}
+.about h1, .blog-twit h1 {
+  font-size: 15px;
+  font-weight: 600;
+  color: rgba(51,51,51,0.9);
+}
+.about h2 {
+  color: rgba(57,57,57,0.7);
+  font-size: 12px;
+  text-align: justify;
+}
+.about h3, .blog-twit h3 a {
+  font-size: 13px;
+  font-weight: 600;
+  color: #005373;
+}
+.about h4 {
+  font-size: 7.75pt;
+  font-weight: lighter;
+  line-height: 1.1;
+}
+.about li {
+  -moz-box-sizing: padding-box;
+  box-sizing: padding-box;
+}
+.w60 img {
+  float: left;
+  width: 32px;
+}
+.verticalSeparator {
+  background:
+    -moz-repeating-linear-gradient(
+    rgba(0,0,0,0.6) 0px,
+    rgba(0,0,0,0.6) 1px,
+    transparent 2px,
+    transparent 10px
+    );
+  background:
+    -webkit-repeating-linear-gradient(
+    rgba(0,0,0,0.6) 0px,
+    rgba(0,0,0,0.6) 1px,
+    transparent 2px,
+    transparent 10px
+    );
+  background:
+    repeating-linear-gradient(
+    rgba(0,0,0,0.6) 0px,
+    rgba(0,0,0,0.6) 1px,
+    transparent 2px,
+    transparent 10px
+    );
+  width: 0.25%;
+}
+.w38 ul {
+  display: table;
+  width: 90%;
+  margin: 0 auto;
+  outline: 0px dashed;
+}
+.w38 h1 {
+  display: table-row;
+}
+.w38 ul > :nth-child(n+2) {
+  float: left;
+}
+.w38 ul > :nth-child(2n+2) {
+  clear: both;
+}
+.w38 li {
+  border: 3px solid rgba(193,193,193,1);
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  line-height: 0;
+  margin: 6px 2%;
+  text-align: center;
+  width: 46%;
+}
+.w38 li img {
+  -moz-box-sizing: border-box;
+  margin: 15px auto;
+  -moz-transform: scale(0.9);
+  width: 110px;
+}
+.blog-twit ul:not(.w2){/*
+  background:
+    -moz-linear-gradient(
+    rgba(255,255,255,1) 0px,
+    rgba(229,229,229,1) 2px,
+    white 25px,
+    white 100%
+    );*/
+  position: relative;
+}
+.blog-twit img {
+  border: 3px solid rgba(228,228,228,1);
+  margin-right: 10px;
+  outline: 1px solid rgba(200,200,200,1);
+  width: 200px;
+}
+.blog-twit h1 {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 10px 0 5px 0;
+  margin-bottom: 12px;
+  display: list-item;
+  vertical-align: middle;
+  font-weight: 900;
+}
+.blog-twit ul > :first-child {
+  padding-bottom: 0 0 5px 0;
+}
+.blog-twit a.aGreen {
+  float: right;
+  padding: 2px 12px 0 12px;
+  width: 110px;
+}
+.blog-twit ul h1,
+.blog-twit ul p:not(:last-child),
+footer>div>div h1 {
+  border-bottom: 1px dashed rgba(0,0,0,0.5);
+}
+#accordion>:nth-child(n){
+  border:none;
+}
+#accordion>:nth-child(odd){background: rgba(23,23,23,.05);}
+#accordion>:nth-child(even){background: rgba(23,23,23,0.2);}
+
+.blog-twit h5,
+.blog-twit p {
+/*background: transparent;*/
+  display: block;
+  font-size: 8.5pt;
+}
+.blog-twit span {
+  color:rgba(0,83,115,0.9);
+  margin: 8px 0;
+}
+/*.blog-twit h5 {
+  font-size: 8pt;
+  font-style: italic;
+}*/
+.blog-twit p:not(:last-child) {
+  padding-bottom: 5px;
+  margin-bottom: 10px;
+}
+#accordion h5 {
+  margin-bottom: 5px;
+}
+.twitter em {
+  margin-top: 5px;
+}
+#accordion h5, .twitter em {
+  color: rgba(22,22,22,0.5);
+  display: block;
+  font-size: 7.5pt;
+  font-style: italic;
+}
+.twitter p a {
+  color: rgba(221,154,0,1);
+  text-decoration: none;
+}
+.twitter p a:hover {
+  text-decoration: underline;
+}
+.twitter span {
+  font-weight: normal;
+  margin-bottom: 3px;
+}

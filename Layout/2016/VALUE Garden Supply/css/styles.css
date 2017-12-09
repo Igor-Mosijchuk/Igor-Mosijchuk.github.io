@@ -1,0 +1,65 @@
+@import url(fonts.css);
+
+@import url(0.reset.css);
+@import url(1.header.css);
+@import url(2.mainContainer.css);
+@import url(2.mainContainer_tagline.css);
+@import url(3.mainContainer_sidebar.css);
+@import url(4.mainContainer_blocks.css);
+@import url(5.footer.css);
+
+body {
+	font-family: 'Proxima Nova';    
+}
+body > :nth-child(n) {/*header, footer, main*/
+	width: 100%;
+}
+.row {
+	box-sizing: border-box;
+	width: 1030px;
+	margin: 0 auto;
+}
+/*-----form input styles---BEGIN---*/
+header form,
+.sidebar form,
+footer form {
+	background: #f3efe4;
+	border: 1px solid;
+	border-color: #E2D9BF #ede8d8 transparent;
+	border-radius: 6px;
+	bottom: 16px;
+	height: 35px;
+	right: 0;
+	position: relative;
+}
+header input, 
+.sidebar input,
+footer input {
+	box-shadow: inset 0 3px 3px 0 rgba(237,232,216,0.7);
+	background: transparent;
+	box-sizing: border-box;
+	border: none;
+	color: #757F3C !important;
+	font: italic 8pt georgia;
+	line-height: 35px;
+	padding: 0 42px 0 14px;
+	position: relative;
+	width: 100%;
+	letter-spacing: 0.75px;
+	word-spacing: -1.5px;
+}
+header input+em , 
+.sidebar input+em,
+footer input+em {
+	height: 35px;
+	position: absolute;
+	right: 0;
+	top: 0;	
+}
+/*-----form input styles---END---*/
+
+
+
+
+
+

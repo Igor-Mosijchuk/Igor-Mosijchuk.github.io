@@ -1,0 +1,49 @@
+#sponsors {
+  border-bottom: 1px solid rgba(0,0,0,0.15)
+}
+#sponsors ul {
+  border-spacing: 12px 0;
+  display: table;
+  margin: 70px auto 16px auto;
+  position: relative;
+  text-align: justify;
+  width: 100%;
+}
+#sponsors ul li {
+  background: #F3FCF5;
+  border-radius: 5px;
+  border-top: 1px solid rgba(0,0,0,0.2);
+  border-bottom: 3px solid rgba(0,0,0,0.25);
+  display: table-cell;
+  padding: 9px 17px;
+  transform: scale(0.975);
+}
+#sponsors ul li:hover {
+  box-shadow: 0 -2.5px 1px 1px rgba(0,0,0,0.07);
+  transform: scale(1);
+}
+#sponsors ul li img {
+  max-height: 100px;
+  max-width: 180px;
+  min-height: 100px;
+  min-width: 180px;
+}
+#sponsors ul + div {
+  text-align: center;
+  margin-bottom: 80px;
+}
+#sponsors ul + div em {
+  background: #C8CBC8;
+  border-radius: 3px;
+  color: white;
+  opacity: 0.5;
+  padding: 3px 6px 2px 6px;
+  vertical-align: middle;
+}
+#sponsors ul + div em + em {
+  margin-left: 3px;
+}
+#sponsors ul + div em:hover {
+  cursor: pointer;
+  opacity: 1;
+}

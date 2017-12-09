@@ -1,0 +1,115 @@
+#forUsers h1{
+  font-size: 26px;
+  font-weight: 300;
+  padding-top: 48px;
+  text-align: left;
+  text-shadow: 0 0 3.5px rgba(0,0,0,0.4);
+  text-transform: uppercase;
+  transform: scale(1,1.035);
+}
+#forUsers ul {
+  display: table-cell;
+  padding-bottom: 72px;
+  width: 50%;
+}
+#forUsers .widthContent > :first-child {
+  padding-right: 25px;
+}
+#forUsers .widthContent > :last-child {
+  padding-left: 25px;
+}
+#forUsers h4 {
+  background-image: radial-gradient(black 0, transparent 1px);
+  background-repeat: repeat-x;
+  background-size: 6px 6px, 0 0;
+  margin-top: 12px;
+  width: 192px;
+}
+#forUsers h4 span {
+  background-image: radial-gradient(#BBBBBA  4px, transparent 5px);
+  background-repeat: no-repeat;
+  background-size: 20px 20px, 0 0;
+  display: block;
+  height: 20px;
+  left: -10px;
+  position: relative;
+  top: -7px;
+}
+/*LEFT BLOCK*/
+#forUsers > div > :first-child li {
+  border-spacing: 20px 0;
+  margin: 0 -20px;
+}
+#forUsers > div > :first-child li img {
+  border-radius: 50px;
+  margin-left: -12px;
+  margin-right: 12px;
+  width: 100px;
+}
+#forUsers > div > :first-child li > :nth-child(n) {
+  display: table-cell;
+}
+#forUsers > div > :first-child li p {
+  color: #666F6A;
+  vertical-align: top;
+  font-size: 14.5px;
+  font-style: italic;
+  line-height: 17.5px;
+  width: auto;
+}
+#forUsers > div > :first-child li p span {
+  color: #333331;
+  display: block;
+  font-style: normal;
+  font-weight: bold;
+  margin-top: 18px;
+}
+#forUsers h5 {
+  background-image: radial-gradient(black 0, transparent 1px);
+  background-repeat: repeat-x;
+  background-size: 6px 6px, 0 0;
+  height: 6px;
+  margin: 32px 0 32px 120px;
+}
+#forUsers h5 span {
+  background-image: radial-gradient(#00AFDB 4px, transparent 5px);
+  background-repeat: no-repeat;
+  background-size: 20px 20px, 0 0;
+  display: block;
+  height: 20px;
+  left: -10px;
+  position: relative;
+  top: -7px;
+}
+/*RIGHT BLOCK*/
+#forUsers ul+ul li {
+  border: 1px solid #CFD5D0;
+  border-radius: 4px;
+  background:#F4FCF6;
+  color: #002044;
+  font-weight: bold;
+  line-height: 36px;
+  display: flex;
+}
+#forUsers ul+ul li:hover {
+  box-shadow: 0 0 5px 0 rgba(0,0,0,0.2);
+}
+#forUsers ul+ul > :nth-child(n):not(:last-child):not(h4) {
+  margin-bottom: 8px;
+}
+#forUsers ul+ul li > :nth-child(n) {
+  padding: 0 18px;
+}
+#forUsers ul+ul li span {
+  background: url(../svg/+.svg) no-repeat center center;
+  background-size: 10px 10px;
+  border-right: 1px solid #CFD5D0;
+  display: inline-block;
+  height: 36px;
+  line-height: 36px;
+  margin-right: 9px;
+  vertical-align: middle;
+}
+#forUsers ul+ul li span:hover {
+  cursor: pointer;
+}

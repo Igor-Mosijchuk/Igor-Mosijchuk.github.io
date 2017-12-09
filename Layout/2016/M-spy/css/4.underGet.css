@@ -1,0 +1,72 @@
+#wrapperGet+div {
+  margin-bottom: 55px;
+}
+#wrapperGet+div q {
+  color: #2F3250;
+  box-sizing: border-box;
+  font-weight: bold;
+  border: 9px solid white;
+  border-top: none;
+  border-bottom: none;
+  width: 100%;
+  display: table;
+  font-size: 16px;
+  vertical-align: top;
+}
+#wrapperGet+div q p {
+  display: table;
+  line-height: 150%;
+}
+#wrapperGet+div q > :first-child {
+  width: calc( 80% - 28px );
+  float: left;
+  padding: 9px 0;
+  letter-spacing: .3px;
+  word-spacing: 3px;
+
+}
+#wrapperGet+div q > :first-child span {
+  color: #55CBDA;
+}
+#wrapperGet+div q > :last-child {
+  display: table;
+  float: right;
+  text-align: center;
+  width: calc(20% + 28px) !important;
+}
+#wrapperGet+div q p a {
+  border: 1px solid #55CBDA;
+  border-radius: 4px;
+  color: #55CBDA;
+  display: block;
+  letter-spacing: .5px;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 9px 10px;
+  position: relative;
+}
+#wrapperGet+div q p a:hover {
+  text-decoration: underline;
+}
+#wrapperGet+div q p a > span {
+  border: 11px solid #55CBDA;
+  border-top: none;
+  border-left-color: transparent;
+  border-right-color: transparent;
+  width: 0;
+  position: absolute;
+  left: 28px;
+  margin-left: -12px;
+  top: -11px;
+}
+
+#wrapperGet+div q p a > span span{
+  border: 10px solid white;
+  border-top: none;
+  margin-left: -10px;
+  top: 1px;
+  border-left-color: transparent;
+  border-right-color: transparent;
+  position: absolute;
+}

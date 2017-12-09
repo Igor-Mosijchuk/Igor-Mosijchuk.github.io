@@ -1,0 +1,6 @@
+@media (min-width: 1200px) {
+	header, #mainContainer, footer > * {
+		padding: 0 10%;
+	}
+
+}

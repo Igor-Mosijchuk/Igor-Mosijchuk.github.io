@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 17.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Слой_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 64 64" enable-background="new 0 0 64 64" xml:space="preserve">
+<g>
+	<path fill="#C4D4D4" d="M48.2,48H17.5c-1.4,0-2.6-1.1-2.6-2.6V18.6c0-1.4,1.1-2.6,2.6-2.6h30.8c1.4,0,2.6,1.1,2.6,2.6v26.9
+		C50.8,46.9,49.6,48,48.2,48z"/>
+	<g>
+		<path opacity="0.6" fill="#FFFFFF" d="M19.7,20.8v-0.9c0-0.5-0.4-0.9-0.9-0.9h-0.9C17.9,20,18.7,20.8,19.7,20.8z"/>
+		<path opacity="0.6" fill="#FFFFFF" d="M23,20.8v-0.9c0-0.5-0.4-0.9-0.9-0.9h-0.9C21.1,20,22,20.8,23,20.8z"/>
+		<path opacity="0.6" fill="#FFFFFF" d="M26.2,20.8v-0.9c0-0.5-0.4-0.9-0.9-0.9h-0.9C24.4,20,25.2,20.8,26.2,20.8z"/>
+		<path fill="#FFFFFF" d="M46,23H20c-1.7,0-3,1.3-3,3v17.1c0,1.7,1.3,3,3,3h26c1.7,0,3-1.3,3-3V26C49,24.3,47.7,23,46,23z"/>
+	</g>
+	<g>
+		<g>
+			<g>
+				<g>
+					<rect x="44" y="32" fill="#D0D8D9" width="1.1" height="2"/>
+				</g>
+				<g>
+					<rect x="44" y="35.1" fill="#D0D8D9" width="1.1" height="2"/>
+				</g>
+				<g>
+					<rect x="44" y="38" fill="#D0D8D9" width="1.1" height="2"/>
+				</g>
+				<g>
+					<rect x="44" y="41" fill="#D0D8D9" width="1.1" height="2"/>
+				</g>
+			</g>
+		</g>
+		<g>
+			<rect x="22" y="32" fill="#D4DEDF" width="22" height="2"/>
+			<rect x="22" y="26.9" fill="#D4DEDF" width="18.5" height="2"/>
+			<rect x="22" y="35.1" fill="#D4DEDF" width="22" height="2"/>
+			<rect x="22" y="41" fill="#D4DEDF" width="22" height="2"/>
+			<rect x="22" y="38" fill="#D4DEDF" width="22" height="2"/>
+		</g>
+	</g>
+	<path opacity="0.5" fill="#3D3D3D" d="M37.1,20.7c-4.1,0-5.8,3.2-5.8,5.1s2,5,2.9,6s2.9,4.5,2.9,4.5s2-3.5,2.9-4.5s2.9-4.1,2.9-6
+		S41.2,20.7,37.1,20.7z M37.1,28.9c-1.4,0-2.5-1.1-2.5-2.5s1.1-2.5,2.5-2.5c1.4,0,2.5,1.1,2.5,2.5S38.5,28.9,37.1,28.9z"/>
+	<path fill="#F8A141" d="M36.5,19.9c-4,0-5.6,3.1-5.6,5s2,4.9,2.8,5.9s2.8,4.4,2.8,4.4s2-3.4,2.8-4.4s2.8-4,2.8-5.9
+		S40.5,19.9,36.5,19.9z M36.5,27.9c-1.3,0-2.4-1.1-2.4-2.4s1.1-2.4,2.4-2.4s2.4,1.1,2.4,2.4S37.9,27.9,36.5,27.9z"/>
+	<path opacity="0.1" fill="#3D3D3D" d="M18.2,48H50c0.5,0,0.8-0.4,0.8-0.8V18.4c0-0.9-0.8-1.7-0.8-1.7L15.8,47.3
+		C15.8,47.3,16.3,48,18.2,48z"/>
+</g>
+</svg>

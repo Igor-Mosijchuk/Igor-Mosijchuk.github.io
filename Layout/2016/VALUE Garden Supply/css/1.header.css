@@ -1,0 +1,125 @@
+header {
+	background: white;
+	border-bottom: 1px solid #e4ded1;
+	display: table;
+	font-weight: 500;
+}
+header .row>:nth-child(n) {
+	display: table-cell;
+	position: relative;
+}
+header .row > a img{
+	height: 84px;
+	width: 126px;
+	position: relative;
+	bottom: -9px;
+}
+header nav {
+	padding: 12px 0 16px 25px !important;
+	width: 100%;
+}
+header nav>:nth-child(n){
+	display: table;
+	position: absolute;
+	outline: 0px solid;
+}	
+header a:not([title*="Value"]):hover {
+	border-radius: 3px;
+	text-decoration: none;
+	background: #FCFCFC;
+	box-shadow: 0 0 4px rgba(84,91,43,0.4);
+}
+header li {
+	display: table-cell;
+}
+
+
+/*-------massage----START---*/
+header p {
+	color: #c4b07a;
+	font-size: 11px;
+	font-weight: 100;
+	letter-spacing: 0.15px;
+	text-transform: uppercase;
+	top: 15px;
+}
+header p em {
+	background: url(../svg/header/truck.svg) no-repeat center center, transparent;
+	display: inline-block;
+	height: 11px;
+	margin-right: 9px; 
+	width: 19px;
+}
+/*-------massage----START---*/
+
+
+/*-------account----START---*/
+.account {
+	color: #414141;
+	font-size: 12px;
+	right: 0;
+	top: 14px;
+}
+.account li {
+	padding: 0 6px;
+}
+.account li:last-child {
+	padding-right: 0;
+}
+.account li:not(:last-child){
+	border-right: 1px solid rgba(0,0,0,0.8);
+}
+.account a {
+	color: rgba(0,0,0,0.8);
+	font-weight: 500;
+	letter-spacing: -0.2px;
+	padding: 0 2px;
+	word-spacing: .5px;
+}
+/*-------account----END---*/
+
+
+/*-------mainMenu----START---*/
+.mainMenu {
+	color: #3b401e;
+	bottom: 22px;
+	left: 16px;
+}
+.mainMenu li {
+	padding: 0 11.5px 0 15.5px; 
+}
+.mainMenu li:first-child {
+	padding-left: 0;
+}
+.mainMenu li:not(:last-child){
+	border-right: 1px solid #3b401e;
+}
+.mainMenu a {
+	color: #3b401e;
+	font-size: 14.8px;
+	letter-spacing: 0.8px;
+	word-spacing: -0.8px;
+	padding: 0 9px;
+}
+.mainMenu a span {
+	color: #eba12a;
+	display: inline-block;
+	transform-origin: center center;
+	transform: scale(0.75);
+	margin: 0 3px;
+}
+.mainMenu a span:after {	content: ")";	}
+.mainMenu a span:before {	content: "(";	}
+/*-------mainMenu----END---*/
+
+
+/*-------search----START---*/
+header form {
+	width: 250px;
+}
+header input+em {
+	background: url(../svg/header/search.svg) no-repeat center;
+	margin-right: 16px; 
+	width: 17px;
+}
+/*-------search----END---*/

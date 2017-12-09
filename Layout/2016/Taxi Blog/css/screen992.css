@@ -1,0 +1,36 @@
+@media (min-width:992px) {
+
+	body {
+		font-size: 1rem;
+	}
+	header, #mainContainer, footer>* {
+		padding: 0 8%;
+	}
+	
+	.posts > * {
+		padding-left: 4.1%;
+		padding-right: 4.1%;
+	}
+	.posts p {
+		/*outline: 1px solid red;*/
+		padding-left: 35%;
+	}
+	.pagination > * {
+		line-height: 1.8rem;
+		height: 1.8rem;
+	}
+	.pagination a {
+		padding: 0 1rem;
+	}
+	.pagination button {
+		padding: 0 .6rem;
+		margin: 0 .75%;
+	}
+	aside {
+		padding: 0 2%;
+	}
+
+	.social label:not(:last-child) {
+		padding-right: 14px;
+	}
+}

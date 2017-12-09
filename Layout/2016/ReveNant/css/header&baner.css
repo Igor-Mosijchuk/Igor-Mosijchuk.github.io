@@ -1,0 +1,102 @@
+#firstLine {
+  background: #45b5f7;
+  font-size: 12px;
+  line-height: 32px;
+}
+#firstLine a {
+  display: block;
+  padding: 0 10px;
+}
+#firstLine a:hover {
+  background: rgba(29,29,29,0.5);
+}
+#ourContact {
+  float: left;
+}
+#ourContact li {
+  display: table-cell;
+  vertical-align: middle;
+  width: auto;
+}
+#ourContact a {
+  display: table-cell;
+}
+#ourContact img {
+  height: 15px;
+  padding: 8px 5px 8px 0;
+  float: left;
+}
+#yourContact {
+  float: right;
+}
+#yourContact li {
+  display: table-cell;
+  vertical-align: middle;
+  height: 30px;
+  width: auto;
+}
+#yourContact > :not(:last-child) {
+  border-right: 1px solid rgba(216,255,254,1);
+}
+#mainLogo {
+  background: rgba(245,252,246,1);
+}
+#mainLogo > a {
+  text-align: center;
+}
+#mainLogo svg {
+  height: 82px;
+  margin: 51px 0;
+}
+header > :last-child {
+  background: linear-gradient(
+    rgba(212,219,213,1) 0px,
+    rgba(212,219,213,1) 3px,
+    rgba(245,252,246,1) 3px,
+    rgba(245,252,246,1) 73px,
+    rgba(212,219,213,1) 73px,
+    rgba(212,219,213,1) 76px
+  );
+}
+header > :last-child .nav { /*UL*/
+  display: table;
+  margin: 0 auto;
+}
+header > :last-child .nav li {
+  display: table-cell;
+}
+header > :last-child .nav a {
+  color: rgba(57,65,58,1);
+  display: block;
+  font-size: 13px;
+  padding: 30.5px 20px;
+}
+header > :last-child .nav a:hover {
+  background: linear-gradient(
+    rgba(177,184,178,1) 0px,
+    rgba(177,184,178,1) 3px,
+    rgba(236,237,232,1) 3px,
+    rgba(236,237,232,1) 73px,
+    rgba(177,182,176,1) 73px,
+    rgba(177,182,176,1) 76px
+  );
+  color: rgb(62,189,219);
+}
+#baner {
+  /*margin: 0 auto;*/
+  background: center top url(../img/baner.jpg);
+  border-bottom: 2.5px solid #D9DCD9;
+  height: 421px;
+  /*transform: scale(1);
+  transform-origin: center top;*/
+}
+.triAngleDown {
+  border-color: #D9DCD9 transparent transparent transparent;
+  border-style: solid;
+  border-width: 13px;
+  height: 0;
+  margin: -13px auto;
+  position: relative;
+  top: 13px;
+  width: 0;
+}
