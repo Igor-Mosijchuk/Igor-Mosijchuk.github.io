@@ -4,7 +4,7 @@
 @import url(header.css);
 @import url(search.css);
 @import url(header.css);
-@import url(baner.css);
+@import url(slider.css);
 @import url(main-container.css);
 @import url(footer.css);
 
@@ -28,7 +28,7 @@ body {
   position: absolute;
   width: 324px;
 }
-#baner, footer{
+#slider, footer{
   background:rgba(0,68,115,1);
   background: -moz-radial-gradient(40% 35%,
     rgba(0,90,141,0.85) 1%,
