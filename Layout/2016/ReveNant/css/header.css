@@ -82,9 +82,9 @@ header > :last-child .nav a:hover {
   );
   color: rgb(62,189,219);
 }
-#baner {
+#slider {
   /*margin: 0 auto;*/
-  background: center top url(../img/baner.jpg);
+  background: center top url(../img/slider.jpg);
   border-bottom: 2.5px solid #D9DCD9;
   height: 421px;
   /*transform: scale(1);
