@@ -4,11 +4,11 @@
   width: 100%;
   z-index: 0;
 }
-#baner > div {
+#slider > div {
   position: relative;
   height: 0;
 }
-#baner > div img {
+#slider > div img {
   transform-origin: center bottom;
   transform: scale(1);
   position: absolute;
