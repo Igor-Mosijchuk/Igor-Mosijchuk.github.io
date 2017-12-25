@@ -9,7 +9,6 @@
 }
 #slider li {
   display: table-cell;
-  outline: 1px dashed rgba(255,255,255,0);
   padding: 4px;
   vertical-align: middle;
 }
