@@ -1,0 +1,22 @@
+include _assets/bemto/bemto
+- set_bemto_settings({modifier: "--" })
+
+include head/head
+include header/header
+
+doctype html
+html(lang="ru")
+	block head
+		head
+			+head({
+				"title": "workshop",
+				"author": "igor@mosijchuk",
+				"description": "workshop description"
+			})
+	body
+		block header
+			+header()
+		block content
+			div content
+		block footer
+			footer footer
