@@ -6,11 +6,11 @@ var gulp	= require('gulp'),
 	gcmq	= require('gulp-group-css-media-queries'),
 	notify	= require('gulp-notify'),
 	prefix	= require('gulp-autoprefixer'),
-	pug		= require('gulp-pug'),
+	pug	= require('gulp-pug'),
 	plumber = require('gulp-plumber'),
 	sass	= require('gulp-sass'),
 	srcmaps	= require('gulp-sourcemaps'),
-	paths = {
+	paths	= {
 		blocks: 'blocks/',
 		devDir: 'app/',
 		outputDir: 'build/'
@@ -54,13 +54,12 @@ gulp.task('sass', function() {
 			cascade: false
 		}))
 		.pipe(gcmq())
-		.pipe(csso())
-		*/
+		.pipe(csso())*/
+		
 		.on("error", notify.onError({
 			title: "My Error"
 		}))
-		//.pipe(srcmaps.write())
-		//--.pipe(gulp.dest('devDir/css/'))
+		/*.pipe(srcmaps.write())*/
 		.pipe(gulp.dest(paths.devDir + 'css/'))
 
 		.pipe(browserSync.reload({

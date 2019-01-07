@@ -2,21 +2,24 @@ include _assets/bemto/bemto
 - set_bemto_settings({modifier: "--" })
 
 include head/head
-include header/header
+include aside/aside
+include aside/aside-section
+
 
 doctype html
 html(lang="ru")
 	block head
 		head
 			+head({
-				"title": "workshop",
-				"author": "igor@mosijchuk",
-				"description": "workshop description"
+				"title": "ASOS - Shop the new range of men's clothes",
+				"author": "igor@mosijchuck",
+				"description": "Discover the latest trends in men's fashion and style with ASOS. Shop the range of clothes, accessories, shoes, bags and more."
 			})
-	body
-		block header
-			+header()
-		block content
-			div content
-		block footer
-			footer footer
+	+b.BODY
+		+b.container
+			block aside
+			
+
+
+			+e.main
+				p Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deserunt perferendis laudantium at vel amet fugiat repellendus recusandae fugit libero cupiditate, blanditiis quaerat eveniet tenetur cumque suscipit! Quasi consequuntur sequi id.
