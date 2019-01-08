@@ -8,6 +8,7 @@ include aside/aside-section
 
 doctype html
 html(lang="ru")
+
 	block head
 		head
 			+head({
@@ -15,11 +16,18 @@ html(lang="ru")
 				"author": "igor@mosijchuck",
 				"description": "Discover the latest trends in men's fashion and style with ASOS. Shop the range of clothes, accessories, shoes, bags and more."
 			})
+	.template-grid
+		- var n = 1
+		ul
+			while n <= 12
+				li= n++ 
+					span   Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci ut laborum architecto?
+
 	+b.BODY
 		+b.container
-			block aside
-			
+			//- +aside
+
 
 
 			+e.main
-				p Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deserunt perferendis laudantium at vel amet fugiat repellendus recusandae fugit libero cupiditate, blanditiis quaerat eveniet tenetur cumque suscipit! Quasi consequuntur sequi id.
+				//- p Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deserunt perferendis laudantium at vel amet fugiat repellendus recusandae fugit libero cupiditate, blanditiis quaerat eveniet tenetur cumque suscipit! Quasi consequuntur sequi id.

@@ -1,14 +1,34 @@
+.template-grid
+	position: absolute
+	top: 0
+	// width: 100%
+	// transform-origin: 0%
+	// transform: translate(100%)
+
+	+wrapper()
+	ul
+		background: rgba(25,25,25,.5)
+		height: 100vh
+		+row-flex
+		li
+			// +col()
+			+size(1)
+			+bps
+			// color: red
+			// +col
+			flex: 1 0 auto
+
 html, body
-	// height: 100%
 html
 	color: $body-color
+
 body
 	background: #B4B7BF
 	font-family: $ff-fut
 .container
 	width: 85%
 	max-width: 1170px
-	margin: 10% auto
+	margin: 20px auto
 	box-shadow: 0 45px 35px -20px rgba(51,55,66,.5)
 	background-image: radial-gradient(circle at 81% 0, rgba(53, 58, 91, 0), rgba(72, 82, 99, 0.2)), linear-gradient(to bottom, #f8f8f8, #f8f8f8)
 	display: flex
