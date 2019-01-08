@@ -23,7 +23,7 @@ var gulp	= require('gulp'),
 		mobileFirst: false, /* mobileFirst ? 'min-width' : 'max-width' */
 		container: {
 			maxWidth: '1170px', /* max-width оn very large screen */
-			fields: '68px' /* side fields */
+			fields: '15px' /* side fields */
 		},
 		breakPoints: {
 			lg: {

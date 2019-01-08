@@ -124,28 +124,37 @@ button {
   src: url("../fonts/Montserrat-Thin.otf");
   font-weight: 100; }
 
+/* "sass/04-grid" */
 .template-grid {
-  position: absolute;
-  top: 0;
-  max-width: 1170px;
-  margin: 0 auto;
-  padding-left: 68px;
-  padding-right: 68px; }
-  @media screen and (max-width: 780px) {
-    .template-grid {
-      padding-left: 15px;
-      padding-right: 15px; } }
-  .template-grid ul {
-    background: rgba(25, 25, 25, 0.5);
-    height: 100vh;
-    display: flex;
-    flex-wrap: wrap;
-    margin-left: -16px;
-    margin-right: -16px; }
-    .template-grid ul li {
-      width: calc(8.33333% - 32px);
-      border: 1px solid #000;
-      flex: 1 0 auto; }
+  top: 0; }
+  .template-grid div {
+    max-width: 1170px;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px; }
+    @media screen and (max-width: 780px) {
+      .template-grid div {
+        padding-left: 15px;
+        padding-right: 15px; } }
+    .template-grid div ul {
+      background: rgba(25, 25, 25, 0.5);
+      display: flex;
+      flex-wrap: wrap;
+      margin-left: -16px;
+      margin-right: -16px; }
+      @media screen and (max-width: 960px) {
+        .template-grid div ul {
+          justify-content: center; } }
+      .template-grid div ul li {
+        box-sizing: border-box;
+        word-wrap: break-word;
+        margin-left: 16px;
+        margin-right: 16px;
+        width: calc(8.33333% - 32px);
+        border: 1px solid rgba(0, 0, 0, 0.5); }
+        @media screen and (max-width: 780px) {
+          .template-grid div ul li {
+            width: calc(100% - 32px); } }
 
 html {
   color: #151515; }
@@ -155,19 +164,8 @@ body {
   font-family: "FuturaNew", sans-serif; }
 
 .container {
-  width: 85%;
-  max-width: 1170px;
-  margin: 20px auto;
   box-shadow: 0 45px 35px -20px rgba(51, 55, 66, 0.5);
-  background-image: radial-gradient(circle at 81% 0, rgba(53, 58, 91, 0), rgba(72, 82, 99, 0.2)), linear-gradient(to bottom, #f8f8f8, #f8f8f8);
-  display: flex; }
-  .container > * {
-    width: auto; }
-  .container__sidebar {
-    background: #fff;
-    flex: 1 1; }
-  .container__main {
-    flex: 2 1; }
+  background-image: radial-gradient(circle at 81% 0, rgba(53, 58, 91, 0), rgba(72, 82, 99, 0.2)), linear-gradient(to bottom, #f8f8f8, #f8f8f8); }
 
 .color--white {
   color: #fff; }

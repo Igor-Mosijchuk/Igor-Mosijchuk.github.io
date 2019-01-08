@@ -17,12 +17,11 @@ html(lang="ru")
 				"description": "Discover the latest trends in men's fashion and style with ASOS. Shop the range of clothes, accessories, shoes, bags and more."
 			})
 	.template-grid
-		- var n = 1
-		ul
-			while n <= 12
-				li= n++ 
-					span   Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci ut laborum architecto?
-
+		div
+			- var n = 1
+			ul
+				while n <= 12
+					li= n++
 	+b.BODY
 		+b.container
 			//- +aside
