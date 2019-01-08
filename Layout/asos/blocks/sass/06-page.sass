@@ -1,0 +1,40 @@
+.template-grid
+	// height: 100%
+	// width: 100%
+	top: 0
+	div
+		+wrapper()
+		ul
+			background: rgba(25,25,25,.5)
+			+row-flex
+			+md(justify-content, center)
+			li
+				+col
+				+size(1)
+				+size-sm(12)
+				// height: 30vh
+				+ops(1px,rgba(0,0,0,.5))
+
+
+html, body
+html
+	color: $body-color
+
+body
+	background: #B4B7BF
+	font-family: $ff-fut
+.container
+	// width: 85%
+	// max-width: 1170px
+	// margin: 0 auto
+	box-shadow: 0 45px 35px -20px rgba(51,55,66,.5)
+	background-image: radial-gradient(circle at 81% 0, rgba(53, 58, 91, 0), rgba(72, 82, 99, 0.2)), linear-gradient(to bottom, #f8f8f8, #f8f8f8)
+	// display: flex
+	> * 
+		// width: auto
+	&__sidebar
+		// background: $white
+		// flex: 1 1
+	&__main
+		// flex: 2 1
+	

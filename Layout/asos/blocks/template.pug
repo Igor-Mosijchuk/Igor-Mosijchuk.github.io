@@ -1,0 +1,32 @@
+include _assets/bemto/bemto
+- set_bemto_settings({modifier: "--" })
+
+include head/head
+include aside/aside
+include aside/aside-section
+
+
+doctype html
+html(lang="ru")
+
+	block head
+		head
+			+head({
+				"title": "ASOS - Shop the new range of men's clothes",
+				"author": "igor@mosijchuck",
+				"description": "Discover the latest trends in men's fashion and style with ASOS. Shop the range of clothes, accessories, shoes, bags and more."
+			})
+	.template-grid
+		div
+			- var n = 1
+			ul
+				while n <= 12
+					li= n++
+	+b.BODY
+		+b.container
+			//- +aside
+
+
+
+			+e.main
+				//- p Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deserunt perferendis laudantium at vel amet fugiat repellendus recusandae fugit libero cupiditate, blanditiis quaerat eveniet tenetur cumque suscipit! Quasi consequuntur sequi id.

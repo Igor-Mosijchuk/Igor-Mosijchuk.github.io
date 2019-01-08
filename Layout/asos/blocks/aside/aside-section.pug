@@ -1,0 +1,6 @@
+mixin section(data_section)
+	+b.SECTION
+		each item in data_section.sidebar
+			+e.DIV.item
+				+e.H5= item.h5
+				+e.H6= item.h2 
