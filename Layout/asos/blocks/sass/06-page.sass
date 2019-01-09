@@ -1,6 +1,5 @@
 .template-grid
 	+template-grid
-
 html, body
 html
 	color: $body-color
@@ -9,28 +8,20 @@ html
 body
 	background: #B4B7BF
 	font-family: $ff-fut
+
+
 .container
 	+wrap
-		+media(xs)
-			// +wrap
-
 	+row-flex
-	+row-flex(center)
-	+mv(120px)
-
-	box-shadow: 0 45px 35px -20px rgba(51,55,66,.5)
-	background-image: radial-gradient(circle at 81% 0, rgba(53, 58, 91, 0), rgba(72, 82, 99, 0.2)), linear-gradient(to bottom, #f8f8f8, #f8f8f8)
+	// +row-flex(center)
+	// +mv(20px)
+	// box-shadow: 0 45px 35px -20px rgba(51,55,66,.5)
+	// background-image: radial-gradient(circle at 81% 0, rgba(53, 58, 91, 0), rgba(72, 82, 99, 0.2)), linear-gradient(to bottom, #f8f8f8, #f8f8f8)
 	> *
-		// +col
 		+pv(30px)
-		// +box_padding
 	&__sidebar
-		+box(3)
 		background: $white
-		+media(xs)
-			+box(10)
-
+		+box(2)
 	&__main
-		+box
-		+media(xs)
-			+box(10)
+		+col
+		// +col(12, $pm: 50)

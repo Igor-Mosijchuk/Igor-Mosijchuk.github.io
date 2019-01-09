@@ -1,35 +1,18 @@
-$screens: (lg:1100, md:800, sm:640, xs:480)
-$wrap: 1140px
-$cols: 12
-$gg: 3rem
-
-$atom: 100%/$cols
-$g: $gg/2
-
-
-=wrap($p: 0)
-	min-width: 320px
+=wrap
+	min-width: $min-page-width
 	max-width: $wrap
 	margin: 0 auto
-	+ph($p)
 
-=col($n, $col_gutter: $gg)
+=col($n: 0, $col_gutter: $gg)
 	width: calc(#{$n*$atom} - #{$col_gutter})
 	+mh($g)
-=col-a
-	width: auto
+	// flex-grow: 1
 
-//=box_($plus_padding: 0, $col_padding: $g)  flex: 1 0 auto +ph($plus_padding + $g)
-
-
-=box($n: 0, $plus_padding: 0, $col_padding: $g)
+=box($n: 0, $pp: 0, $col_padding: $g)
 	width: $n*$atom
-	@if $n == 0
-		flex-grow: 1
-	+ph($plus_padding + $g)
+	+ph($pp + $g)
 
-
-=row-flex($jc: space-between, $fw: wrap)
+=row-flex($jc: flex-start, $fw: wrap)
 	display: flex
 	flex-wrap: $fw
 	justify-content: $jc
@@ -44,7 +27,8 @@ $g: $gg/2
 		@media (min-width: #{map-get($screens, $break)}px)
 			@content
 
-//			GRID
+//----------------------------------------------------------------
+
 =template-grid($op: .25)
 	width: 100%
 	opacity: $op
@@ -54,13 +38,17 @@ $g: $gg/2
 	top: 0
 	transform: translate(-50%)
 	transform-origin: 50%
-	border-right: 1px solid #173668
-	border-left: 1px solid #173668
+	// border-right: 1px solid #173668
+	// border-left: 1px solid #173668
 	+wrap
+
 	ul
-		+row-flex(center)
+		+row-flex
+		// +row-flex(center)
+		background: rgba(23,54,104,.5)
+		
 		li
-			// +br
 			+col(1)
 			background: rgba(23,54,104,.5)
+			// +br
 			height: 100vh

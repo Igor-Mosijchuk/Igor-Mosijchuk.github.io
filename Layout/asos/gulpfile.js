@@ -8,7 +8,6 @@ var gulp	= require('gulp'),
 	prefix	= require('gulp-autoprefixer'),
 	pug	= require('gulp-pug'),
 	plumber = require('gulp-plumber'),
-	smartgrid = require('smart-grid'),
 	sass	= require('gulp-sass'),
 	srcmaps	= require('gulp-sourcemaps'),
 	paths	= {

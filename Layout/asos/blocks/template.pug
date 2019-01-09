@@ -16,26 +16,17 @@ html(lang="ru")
 				"author": "igor@mosijchuck",
 				"description": "Discover the latest trends in men's fashion and style with ASOS. Shop the range of clothes, accessories, shoes, bags and more."
 			})
-	.template-grid
-		div
-			ul
-				li
-				li
-				li
-
-				li
-				li
-				li
-
-				li
-				li
-				li
-
-				li
-				li
-				li
+	
 	+b.BODY
+
 		+b.container
+			+aside
+
+
+
+			+e.main
+				p Lorem Ipsum - це текст-"риба", що використовується в друкарстві та дизайні. Lorem Ipsum є, фактично, стандартною "рибою" аж з XVI сторіччя, коли невідомий друкар взяв шрифтову гранку та склав на ній підбірку зразків шрифтів. "Риба" не тільки успішно пережила п'ять століть, але й прижилася в електронному верстуванні, залишаючись по суті незмінною. Вона популяризувалась в 60-их роках минулого сторіччя завдяки виданню зразків шрифтів Letraset, які містили уривки з Lorem Ipsum, і вдруге - нещодавно завдяки програмам комп'ютерного верстування на кшталт Aldus Pagemaker, які використовували різні версії Lorem Ipsum.. Deserunt perferendis laudantium at vel amet fugiat repellendus recusandae fugit libero cupiditate, blanditiis quaerat eveniet tenetur cumque suscipit! Quasi consequuntur sequi id.
+		//-+b.container2
 			+aside
 
 
@@ -56,3 +47,23 @@ html(lang="ru")
 				p Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deserunt perferendis laudantium at vel amet fugiat repellendus recusandae fugit libero cupiditate, blanditiis quaerat eveniet tenetur cumque suscipit! Quasi consequuntur sequi id.
 				p Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deserunt perferendis laudantium at vel amet fugiat repellendus recusandae fugit libero cupiditate, blanditiis quaerat eveniet tenetur cumque suscipit! Quasi consequuntur sequi id.
 				p Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deserunt perferendis laudantium at vel amet fugiat repellendus recusandae fugit libero cupiditate, blanditiis quaerat eveniet tenetur cumque suscipit! Quasi consequuntur sequi id.
+		.template-grid
+			ul
+				li
+				li
+				li
+				li
+				li
+				li
+				li
+				li
+				li
+				li
+				li
+				li
+
+		//.template-grid
+			- var n = 1
+				ul
+					while n <= 12
+						li= n++
