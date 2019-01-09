@@ -22,3 +22,25 @@
 
 =br($a: 1px, $color: black)
 	border: $a solid $color
+
+//GRID  GRID  GRID  GRID  GRID  GRID  GRID  GRID  
+=template-grid($op: .7)
+	width: 100%
+	opacity: $op
+	position: absolute
+	top: 0
+	div
+		+wrapper
+		+md(justify-content, center)
+		ul
+			+row-flex
+			background: rgba(110, 219, 255,.5)
+			li
+				background: rgba(80,170,200,.5)
+				+col
+				+size(1)
+				+size-md(2)
+
+				+size-sm(3)
+				+size-xs(4)
+				height: 100vh
