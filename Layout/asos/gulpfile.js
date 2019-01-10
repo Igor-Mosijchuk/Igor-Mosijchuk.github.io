@@ -8,6 +8,7 @@ var gulp	= require('gulp'),
 	prefix	= require('gulp-autoprefixer'),
 	pug	= require('gulp-pug'),
 	plumber = require('gulp-plumber'),
+	rename	= require('gulp-rename'),
 	sass	= require('gulp-sass'),
 	srcmaps	= require('gulp-sourcemaps'),
 	paths	= {
@@ -52,9 +53,12 @@ gulp.task('sass', function() {
 		.pipe(prefix({
 			browsers: ['last 10 versions'],
 			cascade: false
-		}))
+		}))*/
 		.pipe(gcmq())
-		.pipe(csso())*/
+		.pipe(csso())
+		.pipe(rename({
+			suffix: ".min",
+		}))
 		
 		.on("error", notify.onError({
 			title: "My Error"

@@ -1,16 +1,25 @@
-=wrap
+=wrap($pp: 0)
 	min-width: $min-page-width
 	max-width: $wrap
 	margin: 0 auto
+	+ph($pp)
+	// +mh(-.5*$pp)
 
 =col($n: 0, $col_gutter: $gg)
-	width: calc(#{$n*$atom} - #{$col_gutter})
 	+mh($g)
-	// flex-grow: 1
+	width: calc(#{$n*$atom} - #{$col_gutter})
+	@if $n == 0
+		flex-grow: 1
+		width: 0%
 
-=box($n: 0, $pp: 0, $col_padding: $g)
+
+=box($n: 0, $pp: $g, $col_padding: $g)
 	width: $n*$atom
-	+ph($pp + $g)
+	@if $pp != 0
+		+ph($pp)
+	@if $n == 0
+		flex-grow: 1
+		width: 100%
 
 =row-flex($jc: flex-start, $fw: wrap)
 	display: flex
