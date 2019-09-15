@@ -1,0 +1,40 @@
+.container
+	+wrap
+	+media(md)
+	+row-flex(center)
+	margin-top: 10vh
+	// margin-bottom: 20vh
+
+	box-shadow: 0 45px 35px -20px rgba(51,55,66,.5)
+	background-image: radial-gradient(circle at 81% 0, rgba(53, 58, 91, 0), rgba(72, 82, 99, 0.2)), linear-gradient(to bottom, #f8f8f8, #f8f8f8)
+	> *
+		+pv(30px)
+	&__sidebar
+		background: $white
+		+box(3, 0)
+		// +row-flex
+		> *
+			+box
+			+pv(1.5rem)
+		> * + *
+			border-top: 1px solid $grey-blue
+		section
+			// width: 100%
+			// +col(6)
+		header
+			+row-flex
+			> span
+				+col(0, 0)
+				+br
+			a + a
+				margin-left: .375rem
+			a
+				line-height: 0
+				img
+					+quat(30px)
+			.logo img
+				width: 72px
+
+
+	&__main
+		+col
