@@ -1,0 +1,140 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+*, *:before, *:after {
+  box-sizing: border-box; }
+
+a, button {
+  cursor: pointer; }
+
+a {
+  text-decoration: none; }
+
+button {
+  border: 0;
+  padding: 0;
+  outline: 0; }
+
+.debug {
+  height: 100vh;
+  position: fixed;
+  width: 100%;
+  z-index: -1;
+  opacity: .05; }
+  .debug > div {
+    height: inherit;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding-left: 40px;
+    padding-right: 40px; }
+    @media screen and (max-width: 780px) {
+      .debug > div {
+        padding-left: 15px;
+        padding-right: 15px; } }
+    .debug > div > div {
+      height: inherit;
+      display: flex;
+      flex-wrap: wrap;
+      margin-left: -20px;
+      margin-right: -20px; }
+      .debug > div > div > div {
+        box-sizing: border-box;
+        word-wrap: break-word;
+        margin-left: 20px;
+        margin-right: 20px;
+        width: calc(6.25% - 40px);
+        height: inherit;
+        outline: blue 1px solid;
+        background: red; }
+
+html {
+  font-family: Rubik;
+  font-size: 16px;
+  min-height: 1500px;
+  font-weight: 100; }
+
+body {
+  z-index: 0;
+  color: white;
+  line-height: 1.35;
+  background: rgba(0, 0, 0, 0.88); }
+
+.wrapper {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding-left: 40px;
+  padding-right: 40px;
+  margin: 0 auto;
+  padding: 20px; }
+  @media screen and (max-width: 780px) {
+    .wrapper {
+      padding-left: 15px;
+      padding-right: 15px; } }
+
+#searcharea {
+  box-sizing: border-box;
+  word-wrap: break-word;
+  margin-left: 20px;
+  margin-right: 20px;
+  width: calc(50% - 40px);
+  padding-bottom: 2rem; }
+  #searcharea input {
+    padding: 7px;
+    margin: 0;
+    font-size: 1.2rem;
+    display: block;
+    border: 0; }
+
+h1 {
+  opacity: .1;
+  box-sizing: border-box;
+  word-wrap: break-word;
+  margin-left: 20px;
+  margin-right: 20px;
+  width: calc(50% - 40px);
+  font-size: 2rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  border: 1px solid red; }
+  @media screen and (max-width: 560px) {
+    h1 {
+      width: calc(100% - 40px); } }
