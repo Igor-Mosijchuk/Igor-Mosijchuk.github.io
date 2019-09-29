@@ -1,1 +1,19 @@
-extends template
+include _assets/bemto/bemto
+- set_bemto_settings({modifier: "--" })
+
+include pug/mixins
+include pug/head
+include pug/links
+
+doctype html
+html(lang="ru-RU")
+	block head
+		head
+			+head({
+				"title": "",
+				"author": "igor",
+				"description": ""
+			})
+	block content
+		block body
+		p 131Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis accusantium soluta sunt, quasi veniam tempore suscipit, tempora laudantium ad pariatur incidunt iure inventore corrupti dignissimos repellat deserunt et, laboriosam libero?

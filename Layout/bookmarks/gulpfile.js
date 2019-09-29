@@ -10,12 +10,7 @@ var gulp	= require('gulp'),
 	plumber = require('gulp-plumber'),
 	rename	= require('gulp-rename'),
 	sass	= require('gulp-sass'),
-	srcmaps	= require('gulp-sourcemaps'),
-	paths	= {
-		blocks: 'blocks/',
-		devDir: 'app/',
-		outputDir: 'build/'
-	};
+	srcmaps	= require('gulp-sourcemaps');
 
 //	BROWSER SYNC
 gulp.task('serve', function() {
@@ -23,61 +18,48 @@ gulp.task('serve', function() {
 		server: {
 			baseDir: "app"
 		},
-		notify: false
-	})
-	//browserSync.watch('app', browserSync.reload)
+		port: 3002
+		// ,notify: true
+	});
+	// done();
+	// browserSync.watch('app/**/*.*', browserSync.reload);
+	// gulp.watch('**/*.*').on('change', browserSync.reload);
 })
 
 //	PUG
 gulp.task('pug', function() {
-	// return gulp.src('app/**.pug')
-	return gulp.src([paths.blocks + '*.pug', '!' + paths.blocks + 'template.pug'])
-		.pipe(plumber())
+	return gulp.src('blocks/index.pug')
 		.pipe(pug({
 			pretty:true
 		}))
-		.on("error", notify.onError({
-			title: "My Error"
-		}))
-		.pipe(gulp.dest(paths.devDir))
+		.pipe(gulp.dest('app'))
 		.on('end', browserSync.reload);
 })
-
 //	SASS
 gulp.task('sass', function() {
-	return gulp.src(paths.blocks + '*.sass')
-		//.pipe(srcmaps.init())
-		.pipe(plumber())
+	return gulp.src('blocks/main.sass')
+		// .pipe(srcmaps.init())
 		.pipe(sass())
-		/*
-		.pipe(prefix({
-			browsers: ['last 10 versions'],
-			cascade: false
-		}))*/
-		.pipe(gcmq())
-		.pipe(csso())
-		.pipe(rename({
-			suffix: ".min",
-		}))
-		
+		// .pipe(prefix({browsers: ['last 10 versions'], cascade: false}))
+		// .pipe(csso())
 		.on("error", notify.onError({
-			title: "My Error"
+			title: "sass-css"
 		}))
-		/*.pipe(srcmaps.write())*/
-		.pipe(gulp.dest(paths.devDir + 'css/'))
+		// .pipe(srcmaps.write())
+		.pipe(gulp.dest('app/css/'))
+		//.pipe(browserSync.reload({
+		//	stream: true
+		//}))
+		.on('end', browserSync.reload);
 
-		.pipe(browserSync.reload({
-			stream:true
-		}));
 })
 
-//	WATCH
-gulp.task('watch', function(){
-	gulp.watch(paths.blocks + '**/*.pug', gulp.series('pug'));
-	gulp.watch(paths.blocks + '**/*.sass', gulp.series('sass')) ;
+gulp.task('watch', function() {
+	gulp.watch('blocks/**/*.pug', gulp.series('pug'))
+	gulp.watch('blocks/**/*.sass', gulp.series('sass'))
 })
 
 gulp.task('default', gulp.series(
-	gulp.parallel('pug','sass'),
-	gulp.parallel('watch','serve')
+	gulp.parallel('pug', 'sass'),
+	gulp.parallel('watch', 'serve')
 ));

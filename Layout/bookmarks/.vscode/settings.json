@@ -1,2 +1,7 @@
 {
+    "editor.renderWhitespace": "boundary",
+    "editor.fontSize": 14,
+    "workbench.colorTheme": "Dainty – One Dark Pro (chroma 4, lightness 3)",
+    "terminal.integrated.fontSize": 13,
+    "window.zoomLevel": 0.35
 }
