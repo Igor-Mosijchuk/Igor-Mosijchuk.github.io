@@ -1,45 +1,69 @@
 @import reset
 @import smart-grid
-@import mixins
-@import lists
-
 .debug
 	+debug(red, blue 1px solid)
 	z-index: -1
-	opacity: .05
+	opacity: .03
+    // border: 2px solid
 html
-	font-family: Rubik
-	font-size: 16px
-	min-height: 1500px
-	font-weight: 100
+
+    font-size: 16px
 body
-	z-index: 0
-	color: white
-	line-height: 1.35
-	background: rgba(0,0,0,.88)
-.wrapper
-	+wrapper
-	// max-width: 1200px
-	// border: 1px solid rgba(255,255,255,.1)
-	margin: 0 auto
-	padding: 20px
+    // +wrapper-full
+
+    line-height: 1.35
+    font-family: Rubik ,sans-serif
+#wrapper
+    +wrapper
+    background: rgba(0,0,0,.05)
+    min-height: 100vh
+    display: flex
+    flex-direction: column
+    // justify-content: space-between
+section
+    border: 1px solid green
 #searcharea
-	+col
-	+size(8)
-	padding-bottom: 2rem
-	input
-		padding: 7px
-		margin: 0
-		font-size: 1.2rem
-		display: block
-		border: 0
-h1
-	opacity: .1
-	+col
-	+size(8)
-	+size-xs(16)
-	font-size: 2rem
-	font-weight: 900
-	text-transform: uppercase
-	// padding-bottom: 3rem
-	+b
+    text-align: center
+#update
+    margin-top: 1rem
+    margin-bottom: 1rem
+.searchresults
+    +row-flex
+    justify-content: center
+    &>:last-child
+        // border-top: 1px solid red
+    li
+        +col
+        +size(5)
+        border: 1px solid rgba(0,0,0,.1)
+        // margin-top: 1rem
+        // width: 200px
+        padding: 4rem
+        // height: 100px
+        box-sizing: border-box
+        overflow: hidden
+        // padding-right: .5rem
+        &+li
+            margin-top: 12px
+            // border-color: transparent
+        h2
+            font-weight: 900
+            padding-top: 1rem
+            padding-bottom: 1rem
+h3
+    font-size: 3rem
+    // font-weight: bold
+    // padding-bottom: 1rem
+
+input
+    margin-bottom: 1rem
+    margin-top: 1rem
+    padding: 8px
+p
+    // padding-top: 1rem
+    font-size: 12px
+img
+    display: none
+    border: 1px solid red
+.copyright
+    margin-top: auto
