@@ -1,0 +1,99 @@
+@import reset
+
+$dark: #202224
+$grey: #E7E7E7
+$grey-bg: #F5F5F7
+$blue: #2A67F6
+$blue: #5D92F3
+$light-blue: #66BBFF
+
+@import mixins
+@import smart-grid
+@import extend
+$nav: 2.75rem
+
+a
+	cursor: pointer
+	&:hover
+		color: red
+.debug
+	+debug(rgba(0,0,0,.3), blue 1px solid)
+	z-index: -1
+	opacity: .1
+html
+	font: 16px "SF Pro Display", sans-serif
+	background: rgba(0,0,0,.15)
+body
+	// line-height: 1.35
+	min-height: 2000px
+	position: relative
+
+// #wrapper
+=nvp($vertical-padding:0)
+	//nav-vertical-pad
+	padding-top: $vertical-padding
+	padding-bottom: $vertical-padding
+
+header
+	position: -webkit-sticky
+	position: sticky
+	top: 0
+	z-index: 10
+
+	// width: 100%
+	color: transparentize($grey, .25)
+	background: rgba(0,0,0,.55)
+	// font-weight: 400
+	font-size: .875rem
+	backdrop-filter: saturate(180%) blur(20px)
+	a
+		display: block
+		color: inherit
+		padding: 10px
+
+		&:hover
+			color: white
+			transition: color .4s ease-out
+nav
+	justify-content: space-between
+	// line-height: $nav
+	height: $nav
+	+md-block
+		height: 1.5*$nav
+	+row-flex
+	+wrapper
+	// outline: 3px solid green
+	>*
+		text-align: center
+		margin-top: auto
+		// +b
+		margin-bottom: auto
+	ul
+		display: flex
+		margin: auto
+		+md-block
+			flex-direction: column
+			line-height: 2
+			display: none
+	li
+		+md-block
+			padding: 5px
+	a.btn
+		// +col
+		width: $nav
+.img-svg path
+	fill: rgba(255,255,255,.5)
+.a1
+	+wrapper
+.a2
+	+wrapper-full
+.a1, .a2
+	background: white
+	ul
+		+row-flex
+		height: 100px
+		margin-top: 2rem
+		+jc-c
+		li
+			+col
+			+size(12)

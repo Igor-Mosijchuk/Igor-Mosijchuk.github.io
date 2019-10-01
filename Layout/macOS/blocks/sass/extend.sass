@@ -1,0 +1,62 @@
+h2
+	line-height: 112%
+	font-size: 2.5rem
+	letter-spacing: -0.015em
+	font-weight: bold
+	padding-bottom: 2rem
+	+md-block
+		padding-bottom: 1rem
+		font-size: 1.75rem
+
+p
+	line-height: 136%
+.extend
+	background: $dark
+	padding-top: 2rem
+	img
+		margin-bottom: 2rem
+		+md-block
+			margin-bottom: 1rem
+	a
+		// +b
+		padding-top: 2rem
+		+md-block
+			padding-top: .75rem
+		display: inline-block
+		display: table
+		vertical-align: middle
+		&::after
+			content: "1"
+			padding-left: 1rem
+			display: table-cell
+			vertical-align: middle
+			// +b
+
+		color: $light-blue
+		&:hover
+			color: $blue
+			transition: color .2s ease-out
+
+	h2
+		color: white
+	// +wrapper-full
+	p
+		color: $grey
+	ul
+		padding-top: 3rem
+		padding-bottom: 3rem
+		+row-flex
+		+wrapper
+	li
+		+col
+		+size(5)
+		+shift-lg-left(1)
+		+shift-right(1)
+		+size-md(12)
+		&+li
+			+md-block
+				// +shift-right(0)
+
+				margin-top: 4rem
+
+

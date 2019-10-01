@@ -1,0 +1,54 @@
+include mixins
+include debug-mixin
+
+doctype html
+html(lang="ru-RU")
+	block head
+		head
+			+head({
+					"title": "macOS",
+					"author": "igor",
+					"description": "Discover the latest trends in men's fashion and style with ASOS. Shop the range of clothes, accessories, shoes, bags and more."
+				})
+	body
+		header
+			nav
+				a.btn.logo
+					img.img-svg(src="img/apple-logo.svg")
+				ul
+					+li_a('Mac'			,'https://www.apple.com/ru/mac/')
+					+li_a('iPad'		,'https://www.apple.com/ru/mac/')
+					+li_a('iPhone'		,'https://www.apple.com/ru/mac/')
+					+li_a('Watch'		,'https://www.apple.com/ru/mac/')
+					+li_a('TV'			,'https://www.apple.com/ru/mac/')
+					+li_a('Music'		,'https://www.apple.com/ru/mac/')
+					+li_a('Поддержка'	,'https://www.apple.com/ru/mac/')
+
+				a.btn(href="")
+					img.img-svg(src="img/search.svg")
+				a.btn(href="")
+					img.img-svg(src="img/bag.svg")
+		section.a2(display="none")
+			ul
+				li
+		section.a1(display="none")
+			ul
+				li
+		section.extend
+			ul
+				li
+					img(src="https://www.apple.com/v/macos/catalina/b/images/overview/developer/new_tools_icon__c3vf3jsna2ky_large.jpg", alt="New tools to build new worlds.")
+					h2 New tools to build new worlds.
+					p Если это можно себе представить, значит, это можно создать. ARKit 3 предоставляет новые инструменты для создания потрясающих приложений на крупнейшей в мире платформе дополненной реальности.
+					a(src="") Learn more
+
+				li
+					img(src="https://www.apple.com/v/macos/catalina/b/images/overview/developer/sdk_icon__x3hobtnhkcye_large.jpg", alt="Develop for macOS Catalina")
+					h2 Develop for macOS Catalina.
+					p SDK Apple даёт разработчикам широчайшие возможности для создания приложений, которые будут работать на Mac, iPhone и iPad.
+					a(src="") Learn more about developing for macOS Catalina
+
+
+		block debug
+		script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js")
+		script(src="js/scripts.js")
