@@ -107,9 +107,6 @@ body {
       padding-left: 15px;
       padding-right: 15px; } }
 
-section {
-  border: 1px solid green; }
-
 #searcharea {
   text-align: center; }
 
@@ -130,11 +127,10 @@ section {
     margin-right: 20px;
     width: calc(31.25% - 40px);
     border: 1px solid rgba(0, 0, 0, 0.1);
-    padding: 4rem;
+    margin-top: 1.5rem;
+    padding: 1rem;
     box-sizing: border-box;
     overflow: hidden; }
-    .searchresults li + li {
-      margin-top: 12px; }
     .searchresults li h2 {
       font-weight: 900;
       padding-top: 1rem;
