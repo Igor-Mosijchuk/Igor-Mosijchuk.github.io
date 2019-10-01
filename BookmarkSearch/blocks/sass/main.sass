@@ -10,24 +10,22 @@
 	+debug(red, blue 1px solid)
 	z-index: -1
 	opacity: .03
-	// border: 2px solid
 html
-
 	font-size: 16px
 body
-	// +wrapper-full
-
-	line-height: 1.35
+	// line-height: 1.35
 	font-family: Rubik ,sans-serif
 #wrapper
 	+wrapper
 	background: rgba(0,0,0,.05)
-	min-height: 100vh
+	height: 100vh
 	display: flex
 	flex-direction: column
-	// justify-content: space-between
+	justify-content: space-between
 section
-	// border: 1px solid green
+	&:nth-child(odd)
+		background: rgba(0,0,0,.05)
+		// border: 1px solid green
 #searcharea
 	text-align: center
 #update
@@ -66,11 +64,17 @@ img
 	margin-top: auto
 
 section.card
-	+br
+	// +wrapper
 	+row-flex
-	+jc-c
+	// flex-direction: column
+	// +jc-c
 	> div
 		+col
+		+br
+
+		+size(3)
 		text-align: center
-img
-	// fill: #1ED760
+.img-svg
+	width: 60px
+	& path
+		// fill: red
