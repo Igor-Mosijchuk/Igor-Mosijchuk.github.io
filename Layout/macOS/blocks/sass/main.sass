@@ -27,13 +27,6 @@ body
 	// line-height: 1.35
 	min-height: 2000px
 	position: relative
-
-// #wrapper
-=nvp($vertical-padding:0)
-	//nav-vertical-pad
-	padding-top: $vertical-padding
-	padding-bottom: $vertical-padding
-
 header
 	position: -webkit-sticky
 	position: sticky
@@ -49,38 +42,69 @@ header
 	a
 		display: block
 		color: inherit
-		padding: 10px
-
 		&:hover
 			color: white
 			transition: color .4s ease-out
 nav
 	justify-content: space-between
-	// line-height: $nav
-	height: $nav
+	// max-height: $nav
+	height: 1.4*$nav
+	// line-height: auto
 	+md-block
-		height: 1.5*$nav
+		height: $nav
+		height: 2*$nav
 	+row-flex
 	+wrapper
 	// outline: 3px solid green
-	>*
+	> *
 		text-align: center
-		margin-top: auto
-		// +b
-		margin-bottom: auto
+		align-self: center
 	ul
+		flex: 1
+		justify-content: space-around
+		// justify-content: space-between
 		display: flex
+		padding-left: 2rem
+		padding-right: 2rem
 		margin: auto
+		+lg-block
+			padding-left: 0rem
+			padding-right: 0rem
 		+md-block
+			flex: 0
 			flex-direction: column
 			line-height: 2
 			display: none
 	li
-		+md-block
-			padding: 5px
+		a
+			// display: block
+			+hpad(1rem)
+			+vpad($nav/3)
+			+lg-block
+				+hpad(0.5rem)
+
+
 	a.btn
 		// +col
 		width: $nav
+		+vpad(.75rem)
+
+.mob-menu
+	&:after
+		content: "•••"
+		display: none
+		+md-block
+			display: block
+
+	+md-block
+		.btn
+			display: none
+.logo
+	order: 0
+	+md-block
+		order: 1
+.bag
+	order: 5
 .img-svg path
 	fill: rgba(255,255,255,.5)
 .a1

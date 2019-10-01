@@ -18,17 +18,20 @@ p
 		+md-block
 			margin-bottom: 1rem
 	a
-		// +b
-		padding-top: 2rem
+		+b
+		// padding-top: 2rem
 		+md-block
-			padding-top: .75rem
-		display: inline-block
+			// padding-top: .75rem
+		// display: inline-block
 		display: table
 		vertical-align: middle
 		&::after
-			content: "1"
-			padding-left: 1rem
+			background: url('../img/arrow.svg') no-repeat center center
+			// background-size: 10px 10px
+			content: ""
+			padding-left: 2rem
 			display: table-cell
+			// display: block
 			vertical-align: middle
 			// +b
 
@@ -43,20 +46,27 @@ p
 	p
 		color: $grey
 	ul
-		padding-top: 3rem
-		padding-bottom: 3rem
+		padding-top: 7rem
+		padding-bottom: 7rem
+		+md-block
+			padding-top: 3rem
+			padding-bottom: 3rem
 		+row-flex
 		+wrapper
 	li
 		+col
 		+size(5)
-		+shift-lg-left(1)
 		+shift-right(1)
+
+		+size-lg(12)
+		+shift-lg-left(.5)
+		+shift-lg-right(.5)
+		+lg-block
+			margin-top: 4rem
 		+size-md(12)
 		&+li
 			+md-block
 				// +shift-right(0)
-
-				margin-top: 4rem
+				margin-top: 3rem
 
 

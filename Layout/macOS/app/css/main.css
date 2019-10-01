@@ -1,3 +1,4 @@
+@charset "UTF-8";
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -77,17 +78,14 @@ p {
       .extend img {
         margin-bottom: 1rem; } }
   .extend a {
-    padding-top: 2rem;
-    display: inline-block;
+    border: 1px solid red;
     display: table;
     vertical-align: middle;
     color: #66BBFF; }
-    @media screen and (max-width: 560px) {
-      .extend a {
-        padding-top: .75rem; } }
     .extend a::after {
-      content: "1";
-      padding-left: 1rem;
+      background: url("../img/arrow.svg") no-repeat center center;
+      content: "";
+      padding-left: 2rem;
       display: table-cell;
       vertical-align: middle; }
     .extend a:hover {
@@ -98,8 +96,8 @@ p {
   .extend p {
     color: #E7E7E7; }
   .extend ul {
-    padding-top: 3rem;
-    padding-bottom: 3rem;
+    padding-top: 7rem;
+    padding-bottom: 7rem;
     display: flex;
     flex-wrap: wrap;
     margin-left: 0px;
@@ -108,6 +106,10 @@ p {
     margin: 0 auto;
     padding-left: 0px;
     padding-right: 0px; }
+    @media screen and (max-width: 560px) {
+      .extend ul {
+        padding-top: 3rem;
+        padding-bottom: 3rem; } }
   .extend li {
     box-sizing: border-box;
     word-wrap: break-word;
@@ -117,13 +119,22 @@ p {
     margin-right: calc(8.33333% + 0px); }
     @media screen and (max-width: 960px) {
       .extend li {
-        margin-left: calc(8.33333% + 0px); } }
+        width: calc(100% - 0px); } }
+    @media screen and (max-width: 960px) {
+      .extend li {
+        margin-left: calc(4.16667% + 0px); } }
+    @media screen and (max-width: 960px) {
+      .extend li {
+        margin-right: calc(4.16667% + 0px); } }
+    @media screen and (max-width: 960px) {
+      .extend li {
+        margin-top: 4rem; } }
     @media screen and (max-width: 560px) {
       .extend li {
         width: calc(100% - 0px); } }
     @media screen and (max-width: 560px) {
       .extend li + li {
-        margin-top: 4rem; } }
+        margin-top: 3rem; } }
 
 a {
   cursor: pointer; }
@@ -177,15 +188,14 @@ header {
   backdrop-filter: saturate(180%) blur(20px); }
   header a {
     display: block;
-    color: inherit;
-    padding: 10px; }
+    color: inherit; }
     header a:hover {
       color: white;
       transition: color .4s ease-out; }
 
 nav {
   justify-content: space-between;
-  height: 2.75rem;
+  height: 3.85rem;
   display: flex;
   flex-wrap: wrap;
   margin-left: 0px;
@@ -196,24 +206,61 @@ nav {
   padding-right: 0px; }
   @media screen and (max-width: 560px) {
     nav {
-      height: 4.125rem; } }
+      height: 2.75rem;
+      height: 5.5rem; } }
   nav > * {
     text-align: center;
-    margin-top: auto;
-    margin-bottom: auto; }
+    align-self: center; }
   nav ul {
+    flex: 1;
+    justify-content: space-around;
     display: flex;
+    padding-left: 2rem;
+    padding-right: 2rem;
     margin: auto; }
+    @media screen and (max-width: 960px) {
+      nav ul {
+        padding-left: 0rem;
+        padding-right: 0rem; } }
     @media screen and (max-width: 560px) {
       nav ul {
+        flex: 0;
         flex-direction: column;
         line-height: 2;
         display: none; } }
-  @media screen and (max-width: 560px) {
-    nav li {
-      padding: 5px; } }
+  nav li a {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 0.91667rem;
+    padding-bottom: 0.91667rem; }
+    @media screen and (max-width: 960px) {
+      nav li a {
+        padding-left: 0.5rem;
+        padding-right: 0.5rem; } }
   nav a.btn {
-    width: 2.75rem; }
+    width: 2.75rem;
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem; }
+
+.mob-menu:after {
+  content: "•••";
+  display: none; }
+  @media screen and (max-width: 560px) {
+    .mob-menu:after {
+      display: block; } }
+
+@media screen and (max-width: 560px) {
+  .mob-menu .btn {
+    display: none; } }
+
+.logo {
+  order: 0; }
+  @media screen and (max-width: 560px) {
+    .logo {
+      order: 1; } }
+
+.bag {
+  order: 5; }
 
 .img-svg path {
   fill: rgba(255, 255, 255, 0.5); }
