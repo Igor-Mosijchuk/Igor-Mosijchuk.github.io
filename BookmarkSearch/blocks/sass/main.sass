@@ -1,69 +1,80 @@
 @import reset
+@import mixins
 @import smart-grid
+.btn
+	display: inline-block
+	background: #000
+	color: white
+	padding: 5px 20px
 .debug
 	+debug(red, blue 1px solid)
 	z-index: -1
 	opacity: .03
-    // border: 2px solid
 html
-
-    font-size: 16px
+	font-size: 16px
 body
-    // +wrapper-full
-
-    line-height: 1.35
-    font-family: Rubik ,sans-serif
+	// line-height: 1.35
+	font-family: Rubik ,sans-serif
 #wrapper
-    +wrapper
-    background: rgba(0,0,0,.05)
-    min-height: 100vh
-    display: flex
-    flex-direction: column
-    // justify-content: space-between
+	+wrapper
+	background: rgba(0,0,0,.05)
+	height: 100vh
+	display: flex
+	flex-direction: column
+	justify-content: space-between
 section
-    border: 1px solid green
+	&:nth-child(odd)
+		background: rgba(0,0,0,.05)
+		// border: 1px solid green
 #searcharea
-    text-align: center
+	text-align: center
 #update
-    margin-top: 1rem
-    margin-bottom: 1rem
+	margin-top: 1rem
+	margin-bottom: 1rem
 .searchresults
-    +row-flex
-    justify-content: center
-    &>:last-child
-        // border-top: 1px solid red
-    li
-        +col
-        +size(5)
-        border: 1px solid rgba(0,0,0,.1)
-        // margin-top: 1rem
-        // width: 200px
-        padding: 4rem
-        // height: 100px
-        box-sizing: border-box
-        overflow: hidden
-        // padding-right: .5rem
-        &+li
-            margin-top: 12px
-            // border-color: transparent
-        h2
-            font-weight: 900
-            padding-top: 1rem
-            padding-bottom: 1rem
+	+row-flex
+	justify-content: center
+	&>:last-child
+		// border-top: 1px solid red
+	.card-item
+		+col
+		+size(5)
+		border: 1px solid rgba(0,0,0,.1)
+		margin-top: 1.5rem
+		padding: 1rem
+		box-sizing: border-box
+		overflow: hidden
+		&+.card-item
+		h2
+			font-weight: 900
+			padding-top: 1rem
+			padding-bottom: 1rem
 h3
-    font-size: 3rem
-    // font-weight: bold
-    // padding-bottom: 1rem
-
+	font-size: 3rem
 input
-    margin-bottom: 1rem
-    margin-top: 1rem
-    padding: 8px
+	margin-bottom: 1rem
+	margin-top: 1rem
+	padding: 8px
 p
-    // padding-top: 1rem
-    font-size: 12px
+	// padding-top: 1rem
+	font-size: 12px
 img
-    display: none
-    border: 1px solid red
+	width: 60px
 .copyright
-    margin-top: auto
+	margin-top: auto
+
+section.card
+	// +wrapper
+	+row-flex
+	// flex-direction: column
+	// +jc-c
+	> div
+		+col
+		+br
+
+		+size(3)
+		text-align: center
+.img-svg
+	width: 60px
+	& path
+		// fill: red
