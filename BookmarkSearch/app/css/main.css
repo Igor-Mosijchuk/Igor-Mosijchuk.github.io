@@ -54,12 +54,18 @@ button {
   padding: 0;
   outline: 0; }
 
+.btn {
+  display: inline-block;
+  background: #000;
+  color: white;
+  padding: 5px 20px; }
+
 .debug {
   height: 100vh;
   position: fixed;
   width: 100%;
   z-index: -1;
-  opacity: 0.03; }
+  opacity: .03; }
   .debug > div {
     height: inherit;
     max-width: 1280px;
@@ -120,7 +126,7 @@ body {
   margin-left: -20px;
   margin-right: -20px;
   justify-content: center; }
-  .searchresults li {
+  .searchresults .card-item {
     box-sizing: border-box;
     word-wrap: break-word;
     margin-left: 20px;
@@ -131,7 +137,7 @@ body {
     padding: 1rem;
     box-sizing: border-box;
     overflow: hidden; }
-    .searchresults li h2 {
+    .searchresults .card-item h2 {
       font-weight: 900;
       padding-top: 1rem;
       padding-bottom: 1rem; }
@@ -148,8 +154,21 @@ p {
   font-size: 12px; }
 
 img {
-  display: none;
-  border: 1px solid red; }
+  width: 60px; }
 
 .copyright {
   margin-top: auto; }
+
+section.card {
+  border: 1px solid;
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -20px;
+  margin-right: -20px;
+  justify-content: center; }
+  section.card > div {
+    box-sizing: border-box;
+    word-wrap: break-word;
+    margin-left: 20px;
+    margin-right: 20px;
+    text-align: center; }
