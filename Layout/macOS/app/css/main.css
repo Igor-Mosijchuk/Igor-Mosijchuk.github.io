@@ -88,6 +88,7 @@ a.detail {
   background: #202224;
   padding-top: 2rem; }
   .extend img {
+    height: 5rem;
     margin-bottom: 2rem; }
     @media screen and (max-width: 600px) {
       .extend img {
@@ -321,3 +322,19 @@ nav {
 
 .bag {
   order: 5; }
+
+.separator {
+  width: 100%;
+  background: white;
+  padding-top: 5rem;
+  padding-bottom: 5rem; }
+  .separator div {
+    border-radius: 10px;
+    box-shadow: 0 20px 15px -10px rgba(94, 122, 172, 0.3);
+    width: 100%;
+    max-width: 980px;
+    margin: 0 auto;
+    padding-left: 0px;
+    padding-right: 0px;
+    height: 200px;
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0) 55%), linear-gradient(170deg, #D8ECFF -10%, rgba(234, 245, 255, 0) 90%), linear-gradient(240deg, #EBFFF2 -5%, rgba(248, 254, 251, 0) 80%); }
