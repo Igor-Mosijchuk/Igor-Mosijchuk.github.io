@@ -85,6 +85,7 @@ a.detail {
     transition: color .2s ease-out; }
 
 .extend {
+  background: #202224;
   padding-top: 2rem; }
   .extend img {
     margin-bottom: 2rem; }
@@ -160,7 +161,6 @@ h1 {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent; }
   .about > div {
-    border: 1px solid red;
     padding-top: 5rem;
     padding-bottom: 5rem;
     box-sizing: border-box;
@@ -223,7 +223,8 @@ html {
 
 body {
   min-height: 2500px;
-  position: relative; }
+  position: relative;
+  background: rgba(23, 23, 28, 0.7); }
 
 header {
   position: -webkit-sticky;
