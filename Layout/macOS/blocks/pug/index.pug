@@ -13,8 +13,9 @@ html(lang="ru-RU")
 	body
 		header
 			nav
-				a.btn.logo
+				a.btn.logo(href="")
 					img.img-svg(src="img/apple-logo.svg")
+				input(id="menu-toggle" type="checkbox")
 				ul
 					+li_a('Mac'			,'https://www.apple.com/ru/mac/')
 					+li_a('iPad'		,'https://www.apple.com/ru/mac/')
@@ -24,11 +25,20 @@ html(lang="ru-RU")
 					+li_a('Music'		,'https://www.apple.com/ru/mac/')
 					+li_a('Поддержка'	,'https://www.apple.com/ru/mac/')
 
-				a.mob-menu.btn
-					.btn(href="")
+				//- label(for="menu-toggle")
+				label(for="menu-toggle")
+					a.mob-menu.btn
+						//- .btn(href="")
 						img.img-svg(src="img/search.svg")
 				a.btn.bag(href="")
 					img.img-svg(src="img/bag.svg")
+		section.about
+			div
+				h3 Thunderbolt 3
+				h1 Самый мощный #[br] и универсаль­ный порт.
+				p.decription Thunderbolt 3 объединил высочайшую пропускную способность с функциональностью стандартного интерфейса USB‑C. В итоге получился высокоскоростной и универсальный порт. Он позволяет передавать данные, заряжать устройства и выводить видео на дополнительные мониторы через один и тот же разъём. При этом его скорость в два раза выше, чем у Thunderbolt 2, — до 40 Гбит/с. MacBook Pro 13 и 15 дюймов имеют до четырёх таких портов, чтобы можно было подключаться с обеих сторон. А подсоединить ваши устройства можно всего одним кабелем или кабелем с адаптером. Поскольку порт Thunderbolt 3 симметричен, то при подключении не нужно думать, где у него верх, а где низ.
+				a.detail(href="") Подробнее о Thunderbolt 3
+
 		section.a2(display="none")
 			ul
 				li
@@ -41,13 +51,13 @@ html(lang="ru-RU")
 					img(src="https://www.apple.com/v/macos/catalina/b/images/overview/developer/new_tools_icon__c3vf3jsna2ky_large.jpg", alt="New tools to build new worlds.")
 					h2 New tools to build new worlds.
 					p Если это можно себе представить, значит, это можно создать. ARKit 3 предоставляет новые инструменты для создания потрясающих приложений на крупнейшей в мире платформе дополненной реальности.
-					a(src="") Learn more
+					a.detail(src="") Подробнее
 
 				li
 					img(src="https://www.apple.com/v/macos/catalina/b/images/overview/developer/sdk_icon__x3hobtnhkcye_large.jpg", alt="Develop for macOS Catalina")
 					h2 Develop for macOS Catalina.
 					p SDK Apple даёт разработчикам широчайшие возможности для создания приложений, которые будут работать на Mac, iPhone и iPad.
-					a(src="") Learn more about developing for macOS Catalina
+					a.detail(src="") Подробнее о разработке приложений для macOS Catalina
 
 
 		block debug

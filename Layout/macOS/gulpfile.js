@@ -17,7 +17,7 @@ var gulp = require('gulp'),
 				width: '960px', /* -> @media (max-width: 1100px) */
 			},
 			md: {
-				width: '560px'
+				width: '600px'
 			},
 			sm: {
 				width: '480px',

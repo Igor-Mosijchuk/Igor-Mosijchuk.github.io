@@ -1,0 +1,39 @@
+h1
+	color: white
+	font-size: 4rem
+	font-weight: 600
+	+md-block
+		font-size: 3rem
+=grad
+	background: linear-gradient(to right, #4f3ec8, #9a74ed)
+	-webkit-background-clip: text
+	-webkit-text-fill-color: transparent
+.about
+	margin-top: -2*$nav
+	padding-top: 2*$nav
+	+row-flex
+	background: #000
+	color: $space-grey
+	font-size: 21px
+	h1
+		+grad
+
+	> div
+		+b
+		+vpad(5rem)
+		&>* + *
+			margin-top: 1rem
+
+		+col
+		+size(10)
+		+size-lg(10)
+		+wrapper
+
+	h3
+		font-weight: 600
+		font-size: 37px
+		color: #f2f2ff
+		opacity: .3
+
+	a, p
+		margin-top: 2rem

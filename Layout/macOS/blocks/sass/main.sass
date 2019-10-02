@@ -5,12 +5,16 @@ $grey: #E7E7E7
 $grey-bg: #F5F5F7
 $blue: #2A67F6
 $blue: #5D92F3
+$space-grey: #63636e
 $light-blue: #66BBFF
+$body: #121217
+$body: #17171C
+$nav: 2.75rem
 
 @import mixins
 @import smart-grid
 @import extend
-$nav: 2.75rem
+@import about
 
 a
 	cursor: pointer
@@ -19,31 +23,46 @@ a
 .debug
 	+debug(rgba(0,0,0,.3), blue 1px solid)
 	z-index: -1
-	opacity: .1
+	opacity: .2
 html
 	font: 16px "SF Pro Display", sans-serif
-	background: rgba(0,0,0,.15)
 body
 	// line-height: 1.35
-	min-height: 2000px
+	min-height: 2500px
 	position: relative
+	// background: transparentize($body,.3)
 header
+	input#menu-toggle
+		// opacity: .3
+		display: none
+		&:checked+ul
+			+md-block
+				padding: 20px
+				width: 100%
+				text-align: left
+				display: flex
+				flex-direction: column
+				top: 0
+				margin-top: 2*$nav
+				position: absolute
+				background: lighten(#000, 15%)
+				+row-flex
 	position: -webkit-sticky
 	position: sticky
 	top: 0
 	z-index: 10
-
-	// width: 100%
-	color: transparentize($grey, .25)
-	background: rgba(0,0,0,.55)
-	// font-weight: 400
+	color: white
+	background: rgba(0,0,0,.8)
+	background: rgba(255,255,255,.1)
 	font-size: .875rem
+	backdrop-filter: blur(20px)
 	backdrop-filter: saturate(180%) blur(20px)
 	a
 		display: block
 		color: inherit
 		&:hover
-			color: white
+			color: transparentize($grey, .25)
+
 			transition: color .4s ease-out
 nav
 	justify-content: space-between
@@ -67,17 +86,20 @@ nav
 		padding-left: 2rem
 		padding-right: 2rem
 		margin: auto
+
 		+lg-block
 			padding-left: 0rem
 			padding-right: 0rem
 		+md-block
-			flex: 0
-			flex-direction: column
-			line-height: 2
 			display: none
+			// float: left
+			// flex: 0
+			// flex-direction: column
+			// line-height: 2
+			// display: none
 	li
 		a
-			// display: block
+
 			+hpad(1rem)
 			+vpad($nav/3)
 			+lg-block
@@ -90,11 +112,13 @@ nav
 		+vpad(.75rem)
 
 .mob-menu
-	&:after
-		content: "•••"
-		display: none
-		+md-block
-			display: block
+	background: red
+	// +b(3px)
+	// &:after
+	// 	content: "•••"
+	// 	display: none
+	// 	+md-block
+	// 		display: block
 
 	+md-block
 		.btn
@@ -103,21 +127,10 @@ nav
 	order: 0
 	+md-block
 		order: 1
+	img
+
+
 .bag
 	order: 5
 .img-svg path
-	fill: rgba(255,255,255,.5)
-.a1
-	+wrapper
-.a2
-	+wrapper-full
-.a1, .a2
-	background: white
-	ul
-		+row-flex
-		height: 100px
-		margin-top: 2rem
-		+jc-c
-		li
-			+col
-			+size(12)
+	// fill: rgba(255,255,255,0.5)

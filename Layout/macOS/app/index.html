@@ -1,26 +1,24 @@
 
-<div class="debug">
-  <div>
+<debug>
+  <div class="debug">
     <div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
+      <div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
     </div>
   </div>
-</div><!DOCTYPE html>
+</debug><!DOCTYPE html>
 <html lang="ru-RU">
   <head>
     <title>macOS</title>
@@ -35,7 +33,8 @@
   </head>
   <body>
     <header>
-      <nav><a class="btn logo"><img class="img-svg" src="img/apple-logo.svg"></a>
+      <nav><a class="btn logo" href=""><img class="img-svg" src="img/apple-logo.svg"></a>
+        <input id="menu-toggle" type="checkbox">
         <ul>
           <li><a href="https://www.apple.com/ru/mac/">Mac</a></li>
           <li><a href="https://www.apple.com/ru/mac/">iPad</a></li>
@@ -44,10 +43,17 @@
           <li><a href="https://www.apple.com/ru/mac/">TV</a></li>
           <li><a href="https://www.apple.com/ru/mac/">Music</a></li>
           <li><a href="https://www.apple.com/ru/mac/">Поддержка</a></li>
-        </ul><a class="mob-menu btn">
-          <div class="btn" href=""><img class="img-svg" src="img/search.svg"></div></a><a class="btn bag" href=""><img class="img-svg" src="img/bag.svg"></a>
+        </ul>
+        <label for="menu-toggle"><a class="mob-menu btn"><img class="img-svg" src="img/search.svg"></a></label><a class="btn bag" href=""><img class="img-svg" src="img/bag.svg"></a>
       </nav>
     </header>
+    <section class="about">
+      <div>
+        <h3>Thunderbolt 3</h3>
+        <h1>Самый мощный <br> и универсаль­ный порт.</h1>
+        <p class="decription">Thunderbolt 3 объединил высочайшую пропускную способность с функциональностью стандартного интерфейса USB‑C. В итоге получился высокоскоростной и универсальный порт. Он позволяет передавать данные, заряжать устройства и выводить видео на дополнительные мониторы через один и тот же разъём. При этом его скорость в два раза выше, чем у Thunderbolt 2, — до 40 Гбит/с. MacBook Pro 13 и 15 дюймов имеют до четырёх таких портов, чтобы можно было подключаться с обеих сторон. А подсоединить ваши устройства можно всего одним кабелем или кабелем с адаптером. Поскольку порт Thunderbolt 3 симметричен, то при подключении не нужно думать, где у него верх, а где низ.</p><a class="detail" href="">Подробнее о Thunderbolt 3</a>
+      </div>
+    </section>
     <section class="a2" display="none">
       <ul>
         <li></li>
@@ -62,11 +68,11 @@
       <ul>
         <li><img src="https://www.apple.com/v/macos/catalina/b/images/overview/developer/new_tools_icon__c3vf3jsna2ky_large.jpg" alt="New tools to build new worlds.">
           <h2>New tools to build new worlds.</h2>
-          <p>Если это можно себе представить, значит, это можно создать. ARKit 3 предоставляет новые инструменты для создания потрясающих приложений на крупнейшей в мире платформе дополненной реальности.</p><a src="">Learn more</a>
+          <p>Если это можно себе представить, значит, это можно создать. ARKit 3 предоставляет новые инструменты для создания потрясающих приложений на крупнейшей в мире платформе дополненной реальности.</p><a class="detail" src="">Подробнее</a>
         </li>
         <li><img src="https://www.apple.com/v/macos/catalina/b/images/overview/developer/sdk_icon__x3hobtnhkcye_large.jpg" alt="Develop for macOS Catalina">
           <h2>Develop for macOS Catalina.</h2>
-          <p>SDK Apple даёт разработчикам широчайшие возможности для создания приложений, которые будут работать на Mac, iPhone и iPad.</p><a src="">Learn more about developing for macOS Catalina</a>
+          <p>SDK Apple даёт разработчикам широчайшие возможности для создания приложений, которые будут работать на Mac, iPhone и iPad.</p><a class="detail" src="">Подробнее о разработке приложений для macOS Catalina</a>
         </li>
       </ul>
     </section>

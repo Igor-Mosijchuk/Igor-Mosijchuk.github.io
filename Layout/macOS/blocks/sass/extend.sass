@@ -7,43 +7,41 @@ h2
 	+md-block
 		padding-bottom: 1rem
 		font-size: 1.75rem
-
-p
+p, a
 	line-height: 136%
+	letter-spacing: -.1
+a.detail
+	color: $light-blue
+	margin-top: 1.5rem
+	display: table
+	// vertical-align: middle
+	margin-right: 100px
+	&::after
+		background: url('../img/arrow.svg') no-repeat center center
+		// background-size: 10px 10px
+		content: ""
+		padding-left: 2rem
+		display: inline-cell
+		// display: block
+		vertical-align: bottom
+		// +b
+	&:hover
+		color: $blue
+		transition: color .2s ease-out
 .extend
-	background: $dark
+	// background: $dark
 	padding-top: 2rem
 	img
 		margin-bottom: 2rem
 		+md-block
 			margin-bottom: 1rem
-	a
-		+b
-		// padding-top: 2rem
-		+md-block
-			// padding-top: .75rem
-		// display: inline-block
-		display: table
-		vertical-align: middle
-		&::after
-			background: url('../img/arrow.svg') no-repeat center center
-			// background-size: 10px 10px
-			content: ""
-			padding-left: 2rem
-			display: table-cell
-			// display: block
-			vertical-align: middle
-			// +b
 
-		color: $light-blue
-		&:hover
-			color: $blue
-			transition: color .2s ease-out
 
 	h2
 		color: white
 	// +wrapper-full
 	p
+		font-size: 17px
 		color: $grey
 	ul
 		padding-top: 7rem
