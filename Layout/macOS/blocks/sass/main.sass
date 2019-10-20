@@ -30,7 +30,7 @@ body
 	// line-height: 1.35
 	min-height: 2500px
 	position: relative
-	// background: transparentize($body,.3)
+	background: transparentize($body,.3)
 header
 	input#menu-toggle
 		// opacity: .3
@@ -134,3 +134,19 @@ nav
 	order: 5
 .img-svg path
 	// fill: rgba(255,255,255,0.5)
+
+.separator
+	width: 100%
+	background: white
+	+vpad(5rem)
+
+	div
+		border-radius: 10px
+		// box-shadow: 0 10px 20px rgba(93,146,243,.2)
+		box-shadow: 0 20px 15px -10px rgba(94,122,172,.3)
+
+		width: 100%
+		+wrapper
+		height: 200px
+		// background: linear-gradient(180deg,hsla(0,0%,100%,0) 50%,#fff),linear-gradient(70deg,#eaf5ff 32%,#f6fff8)
+		background: linear-gradient(0deg, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0) 55%),	linear-gradient(170deg, #D8ECFF -10%, rgba(234, 245, 255, 0) 90%), linear-gradient(240deg, #EBFFF2 -5%, rgba(248, 254, 251, 0) 80%)
